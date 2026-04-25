@@ -538,13 +538,102 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-primary py-12 md:py-16 px-6 md:px-12 text-center">
-        <div className="max-w-5xl mx-auto">
-          <p className="text-muted-foreground text-sm md:text-base flex items-center justify-center gap-1 whitespace-nowrap">
-            © 2026 DEO Websites — Built with <span className="heartbeat inline-block mx-1"><Heart size={16} className="text-secondary" /></span> intention.
-          </p>
+      <footer className="px-6 md:px-12 py-12 md:py-16 md:py-20" style={{ backgroundColor: '#161616' }}>
+        <div className="max-w-6xl mx-auto">
+          {/* Top Section - Three Columns */}
+          <div className="grid md:grid-cols-3 gap-12 mb-12 pb-12" style={{ borderBottomColor: 'rgba(218, 165, 32, 0.2)', borderBottomWidth: '1px' }}>
+            {/* Column 1 - Brand */}
+            <div>
+              <h3 className="text-xl md:text-2xl font-heading font-bold mb-3">
+                <span className="text-primary">DEO</span> <span style={{ color: '#F5E8D8' }}>Websites</span>
+              </h3>
+              <p className="text-sm md:text-base mb-4" style={{ color: '#F5E8D8' }}>
+                Building the web for Nigerian businesses — one site at a time.
+              </p>
+              <p className="text-xs md:text-sm text-muted-foreground">
+                Based in Nigeria 🇳🇬
+              </p>
+            </div>
+
+            {/* Column 2 - Quick Links */}
+            <div>
+              <h4 className="text-xs font-bold mb-6 uppercase tracking-widest" style={{ color: '#DAA520' }}>
+                Quick Links
+              </h4>
+              <nav className="flex flex-col gap-3">
+                <button onClick={() => scrollToSection('hero')} className="text-sm text-left transition-colors duration-300 hover:text-primary" style={{ color: '#F5E8D8' }}>
+                  Home
+                </button>
+                <button onClick={() => scrollToSection('about')} className="text-sm text-left transition-colors duration-300 hover:text-primary" style={{ color: '#F5E8D8' }}>
+                  About
+                </button>
+                <button onClick={() => scrollToSection('work')} className="text-sm text-left transition-colors duration-300 hover:text-primary" style={{ color: '#F5E8D8' }}>
+                  Work
+                </button>
+                <button onClick={() => scrollToSection('services')} className="text-sm text-left transition-colors duration-300 hover:text-primary" style={{ color: '#F5E8D8' }}>
+                  Services
+                </button>
+                <button onClick={() => scrollToSection('process')} className="text-sm text-left transition-colors duration-300 hover:text-primary" style={{ color: '#F5E8D8' }}>
+                  Process
+                </button>
+                <button onClick={() => scrollToSection('contact')} className="text-sm text-left transition-colors duration-300 hover:text-primary" style={{ color: '#F5E8D8' }}>
+                  Contact
+                </button>
+              </nav>
+            </div>
+
+            {/* Column 3 - Get In Touch */}
+            <div>
+              <h4 className="text-xs font-bold mb-6 uppercase tracking-widest" style={{ color: '#DAA520' }}>
+                Get In Touch
+              </h4>
+              <div className="space-y-3 mb-6">
+                <a
+                  href="https://wa.me/2349139690181"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-sm transition-colors duration-300 hover:text-primary"
+                  style={{ color: '#F5E8D8' }}
+                >
+                  +234 913 969 0181
+                </a>
+                <a
+                  href="mailto:danielemeni07@gmail.com"
+                  className="block text-sm transition-colors duration-300 hover:text-primary"
+                  style={{ color: '#F5E8D8' }}
+                >
+                  danielemeni07@gmail.com
+                </a>
+              </div>
+
+              {/* Availability Badge */}
+              <div className="flex items-center gap-2">
+                <div className="w-2 h-2 rounded-full" style={{ backgroundColor: '#22C55E', animation: 'pulse 2s ease-in-out infinite' }}></div>
+                <span className="text-xs" style={{ color: '#F5E8D8' }}>Available for new projects</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Bottom Section */}
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 text-xs md:text-sm text-muted-foreground">
+            <p>© 2026 DEO Websites — Built with intention.</p>
+            <p>Handcrafted by Daniel Emeni Ogheneruno</p>
+          </div>
         </div>
       </footer>
+
+      <style>{`
+        @keyframes pulse {
+          0%, 100% {
+            opacity: 1;
+            box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
+          }
+          50% {
+            opacity: 0.8;
+            box-shadow: 0 0 0 6px rgba(34, 197, 94, 0);
+          }
+        }
+      `}</style>
     </main>
   )
 }
