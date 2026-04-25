@@ -74,7 +74,7 @@ export default function KJCakesCase() {
           <ScrollReveal id="header">
             <div className="mb-12 relative">
               <div className="number-watermark">01</div>
-              <h1 className="font-heading font-black text-5xl md:text-7xl mb-4 tracking-tight">KJ Cakes PH</h1>
+              <h1 className="font-heading font-black text-5xl md:text-7xl mb-4 tracking-tight">KJ Cakes <span className="text-primary">PH</span></h1>
               <p className="text-xl md:text-2xl text-secondary mb-8 max-w-3xl">Turning a luxury cake brand into a full digital presence</p>
 
               <div className="flex flex-col sm:flex-row gap-4 mb-8">

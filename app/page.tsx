@@ -97,9 +97,9 @@ export default function Home() {
         <div className="absolute inset-0 dot-grid opacity-50"></div>
 
         <ScrollReveal id="hero">
-          <div className="max-w-4xl text-center relative z-10">
-            <h1 className="font-heading font-black text-3xl sm:text-4xl md:text-6xl lg:text-8xl mb-8 tracking-tight leading-tight">
-              I Build Websites <span className="text-primary">That Work</span>.
+          <div className="max-w-4xl mx-auto text-center relative z-10">
+            <h1 className="font-heading font-black text-3xl sm:text-4xl md:text-6xl lg:text-8xl mb-8 tracking-tight leading-tight w-full">
+              I Build<br className="hidden sm:block" /> Websites <br className="hidden sm:block" /><span className="text-primary">That Work</span>.
             </h1>
             <p className="text-lg md:text-xl mb-12 max-w-2xl mx-auto leading-relaxed" style={{ color: 'rgba(245, 232, 216, 0.8)' }}>
               Hi, I&apos;m Daniel — a Nigerian web developer helping small businesses look professional, get found online, and win more customers.
@@ -128,7 +128,7 @@ export default function Home() {
       <section className="py-20 md:py-32 px-6 md:px-12" id="about">
         <div className="max-w-5xl mx-auto">
           <ScrollReveal id="about-content">
-            <h2 className="heading-accent text-4xl md:text-5xl font-heading font-black mb-12">The Person Behind the Work</h2>
+            <h2 className="heading-accent text-4xl md:text-5xl font-heading font-black mb-12">The Person Behind the <span className="text-primary">Work</span></h2>
 
             <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-start">
               <div className="space-y-6">
@@ -158,7 +158,7 @@ export default function Home() {
       <section className="py-20 md:py-32 px-6 md:px-12" id="work">
         <div className="max-w-5xl mx-auto">
           <ScrollReveal id="work-content">
-            <h2 className="heading-accent text-4xl md:text-5xl font-heading font-black mb-16">What I&apos;ve Built</h2>
+            <h2 className="heading-accent text-4xl md:text-5xl font-heading font-black mb-16">What I&apos;ve <span className="text-primary">Built</span></h2>
 
             <div className="grid gap-8 mb-12">
               {/* KJ Cakes Project */}
@@ -221,7 +221,7 @@ export default function Home() {
       <section className="py-20 md:py-32 px-6 md:px-12" id="testimonials">
         <div className="max-w-5xl mx-auto">
           <ScrollReveal id="testimonials-content">
-            <h2 className="heading-accent text-4xl md:text-5xl font-heading font-black mb-16">What Clients Say</h2>
+            <h2 className="heading-accent text-4xl md:text-5xl font-heading font-black mb-16">What Clients <span className="text-primary">Say</span></h2>
 
             <div className="max-w-2xl">
               <div className="border-2 border-dashed border-primary rounded-lg p-8 md:p-12 text-center">
@@ -242,7 +242,7 @@ export default function Home() {
       <section className="py-20 md:py-32 px-6 md:px-12" id="contact">
         <div className="max-w-5xl mx-auto">
           <ScrollReveal id="contact-content">
-            <h2 className="heading-accent text-4xl md:text-5xl font-heading font-black mb-6 text-center">Let&apos;s Build Something</h2>
+            <h2 className="heading-accent text-4xl md:text-5xl font-heading font-black mb-6 text-center">Let&apos;s Build <span className="text-primary">Something</span></h2>
             <p className="text-lg md:text-xl text-center mb-16 max-w-2xl mx-auto" style={{ color: 'rgba(245, 232, 216, 0.8)' }}>
               Have a project in mind? I&apos;d love to hear about it and explore how we can work together.
             </p>

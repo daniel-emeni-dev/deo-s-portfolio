@@ -73,7 +73,7 @@ export default function BelezaNaturalCase() {
           <ScrollReveal id="header">
             <div className="mb-12 relative">
               <div className="number-watermark">01</div>
-              <h1 className="font-heading font-black text-5xl md:text-7xl mb-4 tracking-tight">Beleza Natural Hair Clinic</h1>
+              <h1 className="font-heading font-black text-5xl md:text-7xl mb-4 tracking-tight">Beleza Natural Hair <span className="text-primary">Clinic</span></h1>
               <p className="text-xl md:text-2xl text-secondary mb-8 max-w-3xl">Reimagining what a Nigerian hair clinic could look like</p>
 
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
