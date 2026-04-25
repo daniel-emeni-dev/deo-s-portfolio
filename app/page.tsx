@@ -380,47 +380,81 @@ export default function Home() {
               Simple, transparent, and built around you.
             </p>
 
-            <div className="space-y-8 md:space-y-12">
-              {/* Step 1 */}
-              <div className="relative flex gap-6 md:gap-8 group">
-                <div className="absolute left-0 top-16 bottom-0 w-0.5 bg-primary opacity-30 -translate-x-1/2"></div>
-                <div className="absolute left-3 top-6 w-7 h-7 rounded-full bg-primary z-10"></div>
-                <div className="flex-1">
-                  <div className="absolute left-0 top-0 text-7xl md:text-8xl font-heading font-black opacity-10 -translate-y-4 -translate-x-8" style={{ color: '#DAA520' }}>01</div>
-                  <h3 className="text-2xl md:text-3xl font-heading font-bold mb-3 relative z-10">Discovery</h3>
-                  <p className="text-base md:text-lg leading-relaxed">We have a quick conversation about your business, your goals, and what you need. No jargon, no pressure.</p>
-                </div>
-              </div>
+            <div className="relative pl-12">
+              {/* Vertical line running through all steps */}
+              <div className="absolute left-4 top-0 bottom-0 w-0.5" style={{ backgroundColor: 'rgba(218, 165, 32, 0.4)' }}></div>
 
-              {/* Step 2 */}
-              <div className="relative flex gap-6 md:gap-8 group transition-all delay-100">
-                <div className="absolute left-0 top-16 bottom-0 w-0.5 bg-primary opacity-30 -translate-x-1/2"></div>
-                <div className="absolute left-3 top-6 w-7 h-7 rounded-full bg-primary z-10"></div>
-                <div className="flex-1">
-                  <div className="absolute left-0 top-0 text-7xl md:text-8xl font-heading font-black opacity-10 -translate-y-4 -translate-x-8" style={{ color: '#DAA520' }}>02</div>
-                  <h3 className="text-2xl md:text-3xl font-heading font-bold mb-3 relative z-10">Design & Build</h3>
-                  <p className="text-base md:text-lg leading-relaxed">I get to work building your site — clean, fast, and designed to represent your brand properly.</p>
+              <div className="space-y-8 md:space-y-12">
+                {/* Step 1 */}
+                <div className="relative group">
+                  {/* Step dot on line */}
+                  <div className="absolute left-1 top-2 w-2 h-2 rounded-full z-10" style={{ backgroundColor: '#DAA520', transform: 'translateX(-50%)' }}></div>
+                  
+                  <div className="flex-1">
+                    {/* Watermark number */}
+                    <div className="absolute -left-8 -top-2 text-8xl md:text-9xl font-heading font-black" style={{ color: 'rgba(218, 165, 32, 0.08)', lineHeight: '0.8' }}>01</div>
+                    
+                    {/* Step label */}
+                    <p className="text-xs font-medium mb-1" style={{ color: '#DAA520' }}>Step 01</p>
+                    {/* Title */}
+                    <h3 className="text-2xl md:text-3xl font-heading font-bold mb-3">Discovery</h3>
+                    {/* Description */}
+                    <p className="text-base md:text-lg leading-relaxed">We have a quick conversation about your business, your goals, and what you need. No jargon, no pressure.</p>
+                  </div>
                 </div>
-              </div>
 
-              {/* Step 3 */}
-              <div className="relative flex gap-6 md:gap-8 group transition-all delay-200">
-                <div className="absolute left-0 top-16 bottom-0 w-0.5 bg-primary opacity-30 -translate-x-1/2"></div>
-                <div className="absolute left-3 top-6 w-7 h-7 rounded-full bg-primary z-10"></div>
-                <div className="flex-1">
-                  <div className="absolute left-0 top-0 text-7xl md:text-8xl font-heading font-black opacity-10 -translate-y-4 -translate-x-8" style={{ color: '#DAA520' }}>03</div>
-                  <h3 className="text-2xl md:text-3xl font-heading font-bold mb-3 relative z-10">Review & Refine</h3>
-                  <p className="text-base md:text-lg leading-relaxed">You see the first version and we adjust together until it feels exactly right.</p>
+                {/* Step 2 */}
+                <div className="relative group transition-all delay-100">
+                  {/* Step dot on line */}
+                  <div className="absolute left-1 top-2 w-2 h-2 rounded-full z-10" style={{ backgroundColor: '#DAA520', transform: 'translateX(-50%)' }}></div>
+                  
+                  <div className="flex-1">
+                    {/* Watermark number */}
+                    <div className="absolute -left-8 -top-2 text-8xl md:text-9xl font-heading font-black" style={{ color: 'rgba(218, 165, 32, 0.08)', lineHeight: '0.8' }}>02</div>
+                    
+                    {/* Step label */}
+                    <p className="text-xs font-medium mb-1" style={{ color: '#DAA520' }}>Step 02</p>
+                    {/* Title */}
+                    <h3 className="text-2xl md:text-3xl font-heading font-bold mb-3">Design & Build</h3>
+                    {/* Description */}
+                    <p className="text-base md:text-lg leading-relaxed">I get to work building your site — clean, fast, and designed to represent your brand properly.</p>
+                  </div>
                 </div>
-              </div>
 
-              {/* Step 4 */}
-              <div className="relative flex gap-6 md:gap-8 group transition-all delay-300">
-                <div className="absolute left-3 top-6 w-7 h-7 rounded-full bg-primary z-10"></div>
-                <div className="flex-1">
-                  <div className="absolute left-0 top-0 text-7xl md:text-8xl font-heading font-black opacity-10 -translate-y-4 -translate-x-8" style={{ color: '#DAA520' }}>04</div>
-                  <h3 className="text-2xl md:text-3xl font-heading font-bold mb-3 relative z-10">Launch</h3>
-                  <p className="text-base md:text-lg leading-relaxed">Your site goes live. I handle the deployment and make sure everything works perfectly.</p>
+                {/* Step 3 */}
+                <div className="relative group transition-all delay-200">
+                  {/* Step dot on line */}
+                  <div className="absolute left-1 top-2 w-2 h-2 rounded-full z-10" style={{ backgroundColor: '#DAA520', transform: 'translateX(-50%)' }}></div>
+                  
+                  <div className="flex-1">
+                    {/* Watermark number */}
+                    <div className="absolute -left-8 -top-2 text-8xl md:text-9xl font-heading font-black" style={{ color: 'rgba(218, 165, 32, 0.08)', lineHeight: '0.8' }}>03</div>
+                    
+                    {/* Step label */}
+                    <p className="text-xs font-medium mb-1" style={{ color: '#DAA520' }}>Step 03</p>
+                    {/* Title */}
+                    <h3 className="text-2xl md:text-3xl font-heading font-bold mb-3">Review & Refine</h3>
+                    {/* Description */}
+                    <p className="text-base md:text-lg leading-relaxed">You see the first version and we adjust together until it feels exactly right.</p>
+                  </div>
+                </div>
+
+                {/* Step 4 */}
+                <div className="relative group transition-all delay-300">
+                  {/* Step dot on line */}
+                  <div className="absolute left-1 top-2 w-2 h-2 rounded-full z-10" style={{ backgroundColor: '#DAA520', transform: 'translateX(-50%)' }}></div>
+                  
+                  <div className="flex-1">
+                    {/* Watermark number */}
+                    <div className="absolute -left-8 -top-2 text-8xl md:text-9xl font-heading font-black" style={{ color: 'rgba(218, 165, 32, 0.08)', lineHeight: '0.8' }}>04</div>
+                    
+                    {/* Step label */}
+                    <p className="text-xs font-medium mb-1" style={{ color: '#DAA520' }}>Step 04</p>
+                    {/* Title */}
+                    <h3 className="text-2xl md:text-3xl font-heading font-bold mb-3">Launch</h3>
+                    {/* Description */}
+                    <p className="text-base md:text-lg leading-relaxed">Your site goes live. I handle the deployment and make sure everything works perfectly.</p>
+                  </div>
                 </div>
               </div>
             </div>
