@@ -98,16 +98,16 @@ export default function Home() {
 
         <ScrollReveal id="hero">
           <div className="max-w-4xl text-center relative z-10">
-            <h1 className="font-heading font-black text-6xl md:text-8xl mb-8 tracking-tight leading-tight">
+            <h1 className="font-heading font-black text-3xl sm:text-4xl md:text-6xl lg:text-8xl mb-8 tracking-tight leading-tight">
               I Build Websites <span className="text-primary">That Work</span>.
             </h1>
-            <p className="text-lg md:text-xl mb-12 max-w-2xl mx-auto leading-relaxed text-secondary">
+            <p className="text-lg md:text-xl mb-12 max-w-2xl mx-auto leading-relaxed" style={{ color: 'rgba(245, 232, 216, 0.8)' }}>
               Hi, I&apos;m Daniel — a Nigerian web developer helping small businesses look professional, get found online, and win more customers.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center stagger-children">
               <button
                 onClick={() => scrollToSection('work')}
-                className="btn-primary flex items-center justify-center gap-2 w-full sm:w-auto"
+                className="px-6 py-4 sm:px-8 bg-primary text-primary-foreground font-bold rounded flex items-center justify-center gap-2 w-full sm:w-auto transition-all duration-300 hover:bg-secondary"
               >
                 See My Work <ArrowRight size={20} />
               </button>
@@ -115,7 +115,7 @@ export default function Home() {
                 href="https://wa.me/2349139690181"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-secondary flex items-center justify-center gap-2 w-full sm:w-auto"
+                className="px-6 py-4 sm:px-8 border-2 border-primary text-primary rounded font-bold flex items-center justify-center gap-2 w-full sm:w-auto transition-all duration-300 hover:bg-primary hover:text-primary-foreground"
               >
                 Let&apos;s Talk <ArrowRight size={20} />
               </a>
@@ -243,30 +243,30 @@ export default function Home() {
         <div className="max-w-5xl mx-auto">
           <ScrollReveal id="contact-content">
             <h2 className="heading-accent text-4xl md:text-5xl font-heading font-black mb-6 text-center">Let&apos;s Build Something</h2>
-            <p className="text-lg md:text-xl text-secondary text-center mb-16 max-w-2xl mx-auto">
+            <p className="text-lg md:text-xl text-center mb-16 max-w-2xl mx-auto" style={{ color: 'rgba(245, 232, 216, 0.8)' }}>
               Have a project in mind? I&apos;d love to hear about it and explore how we can work together.
             </p>
 
             <div className="grid md:grid-cols-2 gap-8 mb-12">
-              <div className="coral-accent border rounded-lg p-8 md:p-10">
+              <div className="rounded-lg p-8 md:p-10" style={{ borderColor: 'rgba(218, 165, 32, 0.2)', borderWidth: '1px' }}>
                 <h3 className="text-xl md:text-2xl font-heading font-bold mb-3">WhatsApp</h3>
                 <p className="text-muted-foreground mb-6">Quick response, direct communication. Let&apos;s chat there.</p>
                 <a
                   href="https://wa.me/2349139690181"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn-primary inline-flex items-center gap-2"
+                  className="text-primary font-medium inline-flex items-center gap-2 hover:text-secondary transition-colors"
                 >
                   Message me <ArrowRight size={18} />
                 </a>
               </div>
 
-              <div className="coral-accent border rounded-lg p-8 md:p-10">
+              <div className="rounded-lg p-8 md:p-10" style={{ borderColor: 'rgba(218, 165, 32, 0.2)', borderWidth: '1px' }}>
                 <h3 className="text-xl md:text-2xl font-heading font-bold mb-3">Email</h3>
                 <p className="text-muted-foreground mb-6">Send me a detailed message with your project details.</p>
                 <a
                   href="mailto:danielemeni07@gmail.com"
-                  className="btn-primary inline-flex items-center gap-2"
+                  className="text-primary font-medium inline-flex items-center gap-2 hover:text-secondary transition-colors"
                 >
                   Send email <ArrowRight size={18} />
                 </a>
@@ -295,8 +295,8 @@ export default function Home() {
       {/* Footer */}
       <footer className="border-t border-primary py-12 md:py-16 px-6 md:px-12 text-center">
         <div className="max-w-5xl mx-auto">
-          <p className="text-muted-foreground text-sm md:text-base flex items-center justify-center gap-2">
-            © 2026 DEO Websites — Built with <span className="heartbeat inline-block"><Heart size={16} className="text-secondary" /></span> intention.
+          <p className="text-muted-foreground text-sm md:text-base flex items-center justify-center gap-1 whitespace-nowrap">
+            © 2026 DEO Websites — Built with <span className="heartbeat inline-block mx-1"><Heart size={16} className="text-secondary" /></span> intention.
           </p>
         </div>
       </footer>
