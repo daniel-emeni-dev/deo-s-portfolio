@@ -163,7 +163,20 @@ export default function Home() {
             <div className="grid gap-8 mb-12">
               {/* KJ Cakes Project */}
               <Link href="/projects/kj-cakes">
-                <div className="glass-card group">
+                <div className="group rounded-3xl p-6 md:p-8 transition-all duration-300 cursor-pointer" style={{
+                  backgroundColor: '#252525',
+                  border: '1px solid rgba(218, 165, 32, 0.25)'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.borderColor = '#DAA520';
+                  e.currentTarget.style.boxShadow = '0 12px 32px rgba(218, 165, 32, 0.2)';
+                  e.currentTarget.style.transform = 'translateY(-4px)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.borderColor = 'rgba(218, 165, 32, 0.25)';
+                  e.currentTarget.style.boxShadow = 'none';
+                  e.currentTarget.style.transform = 'translateY(0)';
+                }}>
                   <div className="mb-6">
                     <h3 className="text-2xl md:text-3xl font-heading font-bold mb-2">KJ Cakes PH</h3>
                     <p className="text-muted-foreground text-sm font-medium">Turning a luxury cake brand into a full digital presence</p>
@@ -187,7 +200,20 @@ export default function Home() {
 
               {/* Beleza Natural Project */}
               <Link href="/projects/beleza-natural">
-                <div className="glass-card group">
+                <div className="group rounded-3xl p-6 md:p-8 transition-all duration-300 cursor-pointer" style={{
+                  backgroundColor: '#252525',
+                  border: '1px solid rgba(218, 165, 32, 0.25)'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.borderColor = '#DAA520';
+                  e.currentTarget.style.boxShadow = '0 12px 32px rgba(218, 165, 32, 0.2)';
+                  e.currentTarget.style.transform = 'translateY(-4px)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.borderColor = 'rgba(218, 165, 32, 0.25)';
+                  e.currentTarget.style.boxShadow = 'none';
+                  e.currentTarget.style.transform = 'translateY(0)';
+                }}>
                   <div className="mb-6">
                     <h3 className="text-2xl md:text-3xl font-heading font-bold mb-2">Beleza Natural Hair Clinic</h3>
                     <p className="text-muted-foreground text-sm font-medium">Reimagining what a Nigerian hair clinic could look like</p>
@@ -210,7 +236,10 @@ export default function Home() {
               </Link>
             </div>
 
-            <div className="border-2 border-dashed border-primary rounded-lg p-8 md:p-12 text-center">
+            <div className="rounded-3xl p-8 md:p-12 text-center" style={{
+              backgroundColor: '#252525',
+              border: '2px dashed #DAA520'
+            }}>
               <p className="text-muted-foreground">More projects coming soon</p>
             </div>
           </ScrollReveal>
