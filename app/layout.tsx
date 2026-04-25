@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Syne, DM_Sans } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const syne = Syne({ subsets: ['latin'], variable: '--font-syne' })
+const dmSans = DM_Sans({ subsets: ['latin'], variable: '--font-dm-sans' })
 
 export const metadata: Metadata = {
   title: 'DEO Websites | Nigerian Web Developer',
@@ -34,8 +35,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className="dark bg-background scroll-smooth">
-      <body className={`${inter.className} font-sans antialiased bg-background text-foreground`}>
+    <html lang="en" className={`${syne.variable} ${dmSans.variable} dark bg-background scroll-smooth`}>
+      <body className="font-dm-sans antialiased bg-background text-foreground">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
