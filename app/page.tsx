@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { ArrowRight, Heart } from 'lucide-react'
+import { ArrowRight, Heart, MessageCircle, Globe, Rocket, Settings } from 'lucide-react'
 import Link from 'next/link'
 
 const scrollToSection = (id: string) => {
@@ -54,8 +54,51 @@ export default function Home() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  const [showTooltip, setShowTooltip] = useState(false)
+
   return (
     <main className="bg-background text-foreground">
+      {/* Floating WhatsApp Button */}
+      <a
+        href="https://wa.me/2349139690181"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-5 md:bottom-8 md:right-8 z-50 w-14 h-14 rounded-full flex items-center justify-center transition-all duration-300"
+        style={{
+          backgroundColor: '#25D366',
+          boxShadow: '0 4px 12px rgba(37, 211, 102, 0.3)',
+          animation: 'pulse-glow 3s ease-in-out infinite'
+        }}
+        onMouseEnter={() => setShowTooltip(true)}
+        onMouseLeave={() => setShowTooltip(false)}
+        onMouseOver={(e) => {
+          e.currentTarget.style.transform = 'scale(1.1)';
+          e.currentTarget.style.boxShadow = '0 8px 24px rgba(37, 211, 102, 0.6)';
+        }}
+        onMouseOut={(e) => {
+          e.currentTarget.style.transform = 'scale(1)';
+          e.currentTarget.style.boxShadow = '0 4px 12px rgba(37, 211, 102, 0.3)';
+        }}
+      >
+        <MessageCircle size={28} className="text-white" />
+        {showTooltip && (
+          <div className="absolute bottom-full right-0 mb-3 px-3 py-2 bg-white text-[#25D366] text-sm font-medium rounded whitespace-nowrap">
+            Let's talk on WhatsApp
+          </div>
+        )}
+      </a>
+
+      <style>{`
+        @keyframes pulse-glow {
+          0%, 100% {
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+          }
+          50% {
+            box-shadow: 0 4px 24px rgba(37, 211, 102, 0.6);
+          }
+        }
+      `}</style>
+
       {/* Navigation */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur border-b border-border">
         <nav className="max-w-5xl mx-auto px-6 md:px-12 py-6 flex items-center justify-between">
@@ -241,6 +284,145 @@ export default function Home() {
               border: '2px dashed #DAA520'
             }}>
               <p className="text-muted-foreground">More projects coming soon</p>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section className="py-20 md:py-32 px-6 md:px-12" id="services">
+        <div className="max-w-5xl mx-auto">
+          <ScrollReveal id="services-content">
+            <h2 className="heading-accent text-4xl md:text-5xl font-heading font-black mb-4">What I <span className="text-primary">Offer</span></h2>
+            <p className="text-lg md:text-xl mb-16 max-w-3xl" style={{ color: 'rgba(245, 232, 216, 0.8)' }}>
+              Every project is built with care, clarity, and your business goals in mind.
+            </p>
+
+            <div className="grid md:grid-cols-3 gap-8 mb-12">
+              {/* Card 1: Business Website */}
+              <div className="group rounded-3xl p-6 md:p-8 transition-all duration-300" style={{
+                backgroundColor: '#252525',
+                border: '1px solid rgba(218, 165, 32, 0.25)'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.borderColor = '#DAA520';
+                e.currentTarget.style.boxShadow = '0 12px 32px rgba(218, 165, 32, 0.2)';
+                e.currentTarget.style.transform = 'translateY(-4px)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.borderColor = 'rgba(218, 165, 32, 0.25)';
+                e.currentTarget.style.boxShadow = 'none';
+                e.currentTarget.style.transform = 'translateY(0)';
+              }}>
+                <Globe size={32} className="text-primary mb-4" />
+                <h3 className="text-xl md:text-2xl font-heading font-bold mb-3">Business Website</h3>
+                <p className="text-base leading-relaxed mb-6">A clean, fast, mobile-first website that represents your brand professionally and converts visitors into customers.</p>
+                <p className="font-bold mb-4" style={{ color: '#DAA520' }}>Starting from ₦30,000</p>
+                <span className="inline-block px-3 py-1 text-xs font-medium rounded" style={{ backgroundColor: 'rgba(255, 111, 97, 0.12)', color: '#FF6F61', border: '1px solid rgba(255, 111, 97, 0.3)' }}>Most Popular</span>
+              </div>
+
+              {/* Card 2: Landing Page */}
+              <div className="group rounded-3xl p-6 md:p-8 transition-all duration-300" style={{
+                backgroundColor: '#252525',
+                border: '1px solid rgba(218, 165, 32, 0.25)'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.borderColor = '#DAA520';
+                e.currentTarget.style.boxShadow = '0 12px 32px rgba(218, 165, 32, 0.2)';
+                e.currentTarget.style.transform = 'translateY(-4px)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.borderColor = 'rgba(218, 165, 32, 0.25)';
+                e.currentTarget.style.boxShadow = 'none';
+                e.currentTarget.style.transform = 'translateY(0)';
+              }}>
+                <Rocket size={32} className="text-primary mb-4" />
+                <h3 className="text-xl md:text-2xl font-heading font-bold mb-3">Landing Page</h3>
+                <p className="text-base leading-relaxed mb-6">A single focused page built to promote one product, service, or event — designed to drive action.</p>
+                <p className="font-bold" style={{ color: '#DAA520' }}>Starting from ₦15,000</p>
+              </div>
+
+              {/* Card 3: Website + SEO */}
+              <div className="group rounded-3xl p-6 md:p-8 transition-all duration-300" style={{
+                backgroundColor: '#252525',
+                border: '1px solid rgba(218, 165, 32, 0.25)'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.borderColor = '#DAA520';
+                e.currentTarget.style.boxShadow = '0 12px 32px rgba(218, 165, 32, 0.2)';
+                e.currentTarget.style.transform = 'translateY(-4px)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.borderColor = 'rgba(218, 165, 32, 0.25)';
+                e.currentTarget.style.boxShadow = 'none';
+                e.currentTarget.style.transform = 'translateY(0)';
+              }}>
+                <Settings size={32} className="text-primary mb-4" />
+                <h3 className="text-xl md:text-2xl font-heading font-bold mb-3">Website + SEO Setup</h3>
+                <p className="text-base leading-relaxed mb-6">Your website plus the basics that help you show up on Google — page titles, meta descriptions, speed optimisation, and Google indexing.</p>
+                <p className="font-bold" style={{ color: '#DAA520' }}>Starting from ₦45,000</p>
+              </div>
+            </div>
+
+            <div className="text-center text-base">
+              <p>Prices are flexible depending on your needs and budget. <a href="https://wa.me/2349139690181" target="_blank" rel="noopener noreferrer" className="text-primary font-medium hover:text-secondary transition-colors">Let's talk</a> — no pressure.</p>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* Process Section */}
+      <section className="py-20 md:py-32 px-6 md:px-12" id="process">
+        <div className="max-w-5xl mx-auto">
+          <ScrollReveal id="process-content">
+            <h2 className="heading-accent text-4xl md:text-5xl font-heading font-black mb-4">How It <span className="text-primary">Works</span></h2>
+            <p className="text-lg md:text-xl mb-16 max-w-3xl" style={{ color: 'rgba(245, 232, 216, 0.8)' }}>
+              Simple, transparent, and built around you.
+            </p>
+
+            <div className="space-y-8 md:space-y-12">
+              {/* Step 1 */}
+              <div className="relative flex gap-6 md:gap-8 group">
+                <div className="absolute left-0 top-16 bottom-0 w-0.5 bg-primary opacity-30 -translate-x-1/2"></div>
+                <div className="absolute left-3 top-6 w-7 h-7 rounded-full bg-primary z-10"></div>
+                <div className="flex-1">
+                  <div className="absolute left-0 top-0 text-7xl md:text-8xl font-heading font-black opacity-10 -translate-y-4 -translate-x-8" style={{ color: '#DAA520' }}>01</div>
+                  <h3 className="text-2xl md:text-3xl font-heading font-bold mb-3 relative z-10">Discovery</h3>
+                  <p className="text-base md:text-lg leading-relaxed">We have a quick conversation about your business, your goals, and what you need. No jargon, no pressure.</p>
+                </div>
+              </div>
+
+              {/* Step 2 */}
+              <div className="relative flex gap-6 md:gap-8 group transition-all delay-100">
+                <div className="absolute left-0 top-16 bottom-0 w-0.5 bg-primary opacity-30 -translate-x-1/2"></div>
+                <div className="absolute left-3 top-6 w-7 h-7 rounded-full bg-primary z-10"></div>
+                <div className="flex-1">
+                  <div className="absolute left-0 top-0 text-7xl md:text-8xl font-heading font-black opacity-10 -translate-y-4 -translate-x-8" style={{ color: '#DAA520' }}>02</div>
+                  <h3 className="text-2xl md:text-3xl font-heading font-bold mb-3 relative z-10">Design & Build</h3>
+                  <p className="text-base md:text-lg leading-relaxed">I get to work building your site — clean, fast, and designed to represent your brand properly.</p>
+                </div>
+              </div>
+
+              {/* Step 3 */}
+              <div className="relative flex gap-6 md:gap-8 group transition-all delay-200">
+                <div className="absolute left-0 top-16 bottom-0 w-0.5 bg-primary opacity-30 -translate-x-1/2"></div>
+                <div className="absolute left-3 top-6 w-7 h-7 rounded-full bg-primary z-10"></div>
+                <div className="flex-1">
+                  <div className="absolute left-0 top-0 text-7xl md:text-8xl font-heading font-black opacity-10 -translate-y-4 -translate-x-8" style={{ color: '#DAA520' }}>03</div>
+                  <h3 className="text-2xl md:text-3xl font-heading font-bold mb-3 relative z-10">Review & Refine</h3>
+                  <p className="text-base md:text-lg leading-relaxed">You see the first version and we adjust together until it feels exactly right.</p>
+                </div>
+              </div>
+
+              {/* Step 4 */}
+              <div className="relative flex gap-6 md:gap-8 group transition-all delay-300">
+                <div className="absolute left-3 top-6 w-7 h-7 rounded-full bg-primary z-10"></div>
+                <div className="flex-1">
+                  <div className="absolute left-0 top-0 text-7xl md:text-8xl font-heading font-black opacity-10 -translate-y-4 -translate-x-8" style={{ color: '#DAA520' }}>04</div>
+                  <h3 className="text-2xl md:text-3xl font-heading font-bold mb-3 relative z-10">Launch</h3>
+                  <p className="text-base md:text-lg leading-relaxed">Your site goes live. I handle the deployment and make sure everything works perfectly.</p>
+                </div>
+              </div>
             </div>
           </ScrollReveal>
         </div>
