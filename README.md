@@ -1,4 +1,4 @@
-# DEO Websites — Personal Portfolio
+# DoreBuild — Personal Portfolio
 
 Personal portfolio website for Daniel Emeni Ogheneruno, 
 a self-taught web developer based in Nigeria building 
@@ -39,5 +39,5 @@ businesses find and hire me easily.
 - Email: danielemeni07@gmail.com
 
 ## Developer
-Daniel Emeni Ogheneruno — DEO Websites
-© 2026 DEO Websites — Built with intention.
+Daniel Emeni Ogheneruno — DoreBuild 
+© 2026 DoreBuild — Built with intention.
