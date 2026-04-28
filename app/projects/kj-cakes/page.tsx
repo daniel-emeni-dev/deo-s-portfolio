@@ -60,10 +60,10 @@ export default function KJCakesCase() {
           </Link>
           <Link
             href="/"
-            className="btn-secondary flex items-center gap-2 text-sm"
+            className="flex items-center gap-1 text-sm font-dm-sans transition-colors duration-200 hover:opacity-80"
+            style={{ color: '#DAA520' }}
           >
-            <ArrowLeft size={18} />
-            Back to Portfolio
+            ← Back to Portfolio
           </Link>
         </nav>
       </header>

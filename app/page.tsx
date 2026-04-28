@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { ArrowRight, Heart, MessageCircle, Globe, Rocket, Settings } from 'lucide-react'
+import { ArrowRight, Heart, MessageCircle, Globe, Rocket, Settings, Clock, Smartphone, Search, RefreshCw, Plus, Minus } from 'lucide-react'
 import Link from 'next/link'
 
 const scrollToSection = (id: string) => {
@@ -36,6 +36,45 @@ const ScrollReveal = ({ children, id }: { children: React.ReactNode; id: string 
       className={`transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
     >
       {children}
+    </div>
+  )
+}
+
+const FAQItem = ({ question, answer }: { question: string; answer: string }) => {
+  const [isOpen, setIsOpen] = useState(false)
+
+  return (
+    <div
+      className="group rounded-3xl p-6 md:p-8 transition-all duration-300 cursor-pointer"
+      style={{
+        backgroundColor: '#252525',
+        borderColor: isOpen ? '#DAA520' : 'rgba(218, 165, 32, 0.25)',
+        borderWidth: '1px',
+        boxShadow: isOpen ? '0 4px 20px rgba(218, 165, 32, 0.08)' : 'none'
+      }}
+      onClick={() => setIsOpen(!isOpen)}
+      onMouseEnter={(e) => {
+        if (!isOpen) {
+          e.currentTarget.style.borderColor = 'rgba(218, 165, 32, 0.6)';
+        }
+      }}
+      onMouseLeave={(e) => {
+        if (!isOpen) {
+          e.currentTarget.style.borderColor = 'rgba(218, 165, 32, 0.25)';
+        }
+      }}
+    >
+      <div className="flex items-center justify-between">
+        <h3 className="text-lg md:text-xl font-heading font-bold">{question}</h3>
+        <div style={{ color: '#DAA520' }}>
+          {isOpen ? <Minus size={24} /> : <Plus size={24} />}
+        </div>
+      </div>
+      {isOpen && (
+        <p className="text-base leading-relaxed mt-4" style={{ color: 'rgba(245, 232, 216, 0.9)' }}>
+          {answer}
+        </p>
+      )}
     </div>
   )
 }
@@ -211,9 +250,9 @@ export default function Home() {
                   border: '1px solid rgba(218, 165, 32, 0.25)'
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.borderColor = '#DAA520';
-                  e.currentTarget.style.boxShadow = '0 12px 32px rgba(218, 165, 32, 0.2)';
-                  e.currentTarget.style.transform = 'translateY(-4px)';
+                  e.currentTarget.style.borderColor = 'rgba(218, 165, 32, 0.6)';
+                  e.currentTarget.style.boxShadow = '0 4px 20px rgba(218, 165, 32, 0.08)';
+                  e.currentTarget.style.transform = 'translateY(-2px)';
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.borderColor = 'rgba(218, 165, 32, 0.25)';
@@ -248,9 +287,9 @@ export default function Home() {
                   border: '1px solid rgba(218, 165, 32, 0.25)'
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.borderColor = '#DAA520';
-                  e.currentTarget.style.boxShadow = '0 12px 32px rgba(218, 165, 32, 0.2)';
-                  e.currentTarget.style.transform = 'translateY(-4px)';
+                  e.currentTarget.style.borderColor = 'rgba(218, 165, 32, 0.6)';
+                  e.currentTarget.style.boxShadow = '0 4px 20px rgba(218, 165, 32, 0.08)';
+                  e.currentTarget.style.transform = 'translateY(-2px)';
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.borderColor = 'rgba(218, 165, 32, 0.25)';
@@ -305,9 +344,9 @@ export default function Home() {
                 border: '1px solid rgba(218, 165, 32, 0.25)'
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.borderColor = '#DAA520';
-                e.currentTarget.style.boxShadow = '0 12px 32px rgba(218, 165, 32, 0.2)';
-                e.currentTarget.style.transform = 'translateY(-4px)';
+                e.currentTarget.style.borderColor = 'rgba(218, 165, 32, 0.6)';
+                e.currentTarget.style.boxShadow = '0 4px 20px rgba(218, 165, 32, 0.08)';
+                e.currentTarget.style.transform = 'translateY(-2px)';
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.borderColor = 'rgba(218, 165, 32, 0.25)';
@@ -319,7 +358,7 @@ export default function Home() {
                 <p className="text-base leading-relaxed mb-6">A clean, fast, mobile-first website that represents your brand professionally and converts visitors into customers.</p>
                 <div className="flex items-center gap-3 mb-4">
                   <span className="text-sm line-through" style={{ color: '#888888' }}>₦60,000</span>
-                  <p className="font-bold text-lg" style={{ color: '#DAA520' }}>₦30,000</p>
+                  <p className="font-bold text-lg" style={{ color: '#DAA520' }}>Starting from ₦30,000</p>
                 </div>
                 <span className="inline-block px-3 py-1 text-xs font-medium rounded" style={{ backgroundColor: 'rgba(255, 111, 97, 0.12)', color: '#FF6F61', border: '1px solid rgba(255, 111, 97, 0.3)' }}>Most Popular</span>
               </div>
@@ -330,9 +369,9 @@ export default function Home() {
                 border: '1px solid rgba(218, 165, 32, 0.25)'
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.borderColor = '#DAA520';
-                e.currentTarget.style.boxShadow = '0 12px 32px rgba(218, 165, 32, 0.2)';
-                e.currentTarget.style.transform = 'translateY(-4px)';
+                e.currentTarget.style.borderColor = 'rgba(218, 165, 32, 0.6)';
+                e.currentTarget.style.boxShadow = '0 4px 20px rgba(218, 165, 32, 0.08)';
+                e.currentTarget.style.transform = 'translateY(-2px)';
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.borderColor = 'rgba(218, 165, 32, 0.25)';
@@ -344,7 +383,7 @@ export default function Home() {
                 <p className="text-base leading-relaxed mb-6">A single focused page built to promote one product, service, or event — designed to drive action.</p>
                 <div className="flex items-center gap-3">
                   <span className="text-sm line-through" style={{ color: '#888888' }}>₦35,000</span>
-                  <p className="font-bold text-lg" style={{ color: '#DAA520' }}>₦15,000</p>
+                  <p className="font-bold text-lg" style={{ color: '#DAA520' }}>Starting from ₦15,000</p>
                 </div>
               </div>
 
@@ -354,9 +393,9 @@ export default function Home() {
                 border: '1px solid rgba(218, 165, 32, 0.25)'
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.borderColor = '#DAA520';
-                e.currentTarget.style.boxShadow = '0 12px 32px rgba(218, 165, 32, 0.2)';
-                e.currentTarget.style.transform = 'translateY(-4px)';
+                e.currentTarget.style.borderColor = 'rgba(218, 165, 32, 0.6)';
+                e.currentTarget.style.boxShadow = '0 4px 20px rgba(218, 165, 32, 0.08)';
+                e.currentTarget.style.transform = 'translateY(-2px)';
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.borderColor = 'rgba(218, 165, 32, 0.25)';
@@ -368,7 +407,7 @@ export default function Home() {
                 <p className="text-base leading-relaxed mb-6">Your website plus the basics that help you show up on Google — page titles, meta descriptions, speed optimisation, and Google indexing.</p>
                 <div className="flex items-center gap-3">
                   <span className="text-sm line-through" style={{ color: '#888888' }}>₦90,000</span>
-                  <p className="font-bold text-lg" style={{ color: '#DAA520' }}>₦45,000</p>
+                  <p className="font-bold text-lg" style={{ color: '#DAA520' }}>Starting from ₦45,000</p>
                 </div>
               </div>
             </div>
@@ -473,22 +512,142 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="py-20 md:py-32 px-6 md:px-12" id="testimonials">
+      {/* My Guarantee Section */}
+      <section className="py-20 md:py-32 px-6 md:px-12" id="guarantee">
         <div className="max-w-5xl mx-auto">
-          <ScrollReveal id="testimonials-content">
-            <h2 className="heading-accent text-4xl md:text-5xl font-heading font-black mb-16">What Clients <span className="text-primary">Say</span></h2>
+          <ScrollReveal id="guarantee-content">
+            <h2 className="heading-accent text-4xl md:text-5xl font-heading font-black mb-4">My <span className="text-primary">Guarantee</span></h2>
+            <p className="text-lg md:text-xl mb-16 max-w-3xl" style={{ color: 'rgba(245, 232, 216, 0.8)' }}>
+              Every project I take on comes with these promises — no exceptions.
+            </p>
 
-            <div className="max-w-2xl">
-              <div className="border-2 border-dashed border-primary rounded-lg p-8 md:p-12 text-center">
-                <div className="quote-mark flex justify-center">"</div>
-                <p className="text-lg md:text-xl leading-relaxed mb-6">
-                  Client testimonials coming soon. Building trust through real work and real results.
-                </p>
-                <p className="text-sm text-muted-foreground">
-                  More stories to be added as I work with amazing businesses.
-                </p>
+            <div className="grid md:grid-cols-2 gap-8">
+              {/* Card 1: 7-Day Delivery */}
+              <div className="group rounded-3xl p-6 md:p-8 transition-all duration-300" style={{
+                backgroundColor: '#252525',
+                border: '1px solid rgba(218, 165, 32, 0.25)'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.borderColor = 'rgba(218, 165, 32, 0.6)';
+                e.currentTarget.style.boxShadow = '0 4px 20px rgba(218, 165, 32, 0.08)';
+                e.currentTarget.style.transform = 'translateY(-2px)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.borderColor = 'rgba(218, 165, 32, 0.25)';
+                e.currentTarget.style.boxShadow = 'none';
+                e.currentTarget.style.transform = 'translateY(0)';
+              }}>
+                <Clock size={32} className="text-primary mb-4" />
+                <h3 className="text-xl md:text-2xl font-heading font-bold mb-3">7-Day Delivery</h3>
+                <p className="text-base leading-relaxed">Your website will be ready within 7 days of our first conversation. No long waits, no excuses.</p>
               </div>
+
+              {/* Card 2: Mobile-First Always */}
+              <div className="group rounded-3xl p-6 md:p-8 transition-all duration-300" style={{
+                backgroundColor: '#252525',
+                border: '1px solid rgba(218, 165, 32, 0.25)'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.borderColor = 'rgba(218, 165, 32, 0.6)';
+                e.currentTarget.style.boxShadow = '0 4px 20px rgba(218, 165, 32, 0.08)';
+                e.currentTarget.style.transform = 'translateY(-2px)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.borderColor = 'rgba(218, 165, 32, 0.25)';
+                e.currentTarget.style.boxShadow = 'none';
+                e.currentTarget.style.transform = 'translateY(0)';
+              }}>
+                <Smartphone size={32} className="text-primary mb-4" />
+                <h3 className="text-xl md:text-2xl font-heading font-bold mb-3">Mobile-First Always</h3>
+                <p className="text-base leading-relaxed">Every site I build looks and works perfectly on mobile. That&apos;s where your customers are.</p>
+              </div>
+
+              {/* Card 3: SEO-Ready From Day One */}
+              <div className="group rounded-3xl p-6 md:p-8 transition-all duration-300" style={{
+                backgroundColor: '#252525',
+                border: '1px solid rgba(218, 165, 32, 0.25)'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.borderColor = 'rgba(218, 165, 32, 0.6)';
+                e.currentTarget.style.boxShadow = '0 4px 20px rgba(218, 165, 32, 0.08)';
+                e.currentTarget.style.transform = 'translateY(-2px)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.borderColor = 'rgba(218, 165, 32, 0.25)';
+                e.currentTarget.style.boxShadow = 'none';
+                e.currentTarget.style.transform = 'translateY(0)';
+              }}>
+                <Search size={32} className="text-primary mb-4" />
+                <h3 className="text-xl md:text-2xl font-heading font-bold mb-3">SEO-Ready From Day One</h3>
+                <p className="text-base leading-relaxed">Your site will be set up to be found on Google from launch — proper titles, meta descriptions, and fast loading speeds.</p>
+              </div>
+
+              {/* Card 4: Unlimited Revisions During Build */}
+              <div className="group rounded-3xl p-6 md:p-8 transition-all duration-300" style={{
+                backgroundColor: '#252525',
+                border: '1px solid rgba(218, 165, 32, 0.25)'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.borderColor = 'rgba(218, 165, 32, 0.6)';
+                e.currentTarget.style.boxShadow = '0 4px 20px rgba(218, 165, 32, 0.08)';
+                e.currentTarget.style.transform = 'translateY(-2px)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.borderColor = 'rgba(218, 165, 32, 0.25)';
+                e.currentTarget.style.boxShadow = 'none';
+                e.currentTarget.style.transform = 'translateY(0)';
+              }}>
+                <RefreshCw size={32} className="text-primary mb-4" />
+                <h3 className="text-xl md:text-2xl font-heading font-bold mb-3">Unlimited Revisions During Build</h3>
+                <p className="text-base leading-relaxed">We adjust until it feels exactly right. Your satisfaction isn&apos;t negotiable.</p>
+              </div>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 md:py-32 px-6 md:px-12" id="faq">
+        <div className="max-w-5xl mx-auto">
+          <ScrollReveal id="faq-content">
+            <h2 className="heading-accent text-4xl md:text-5xl font-heading font-black mb-4">Common <span className="text-primary">Questions</span></h2>
+            <p className="text-lg md:text-xl mb-16 max-w-3xl" style={{ color: 'rgba(245, 232, 216, 0.8)' }}>
+              Everything you need to know before we work together.
+            </p>
+
+            <div className="space-y-4">
+              <FAQItem 
+                question="How long does a website take?" 
+                answer="Most business websites are ready within 7 days of our first conversation. Simple landing pages can be done in 3 days."
+              />
+              <FAQItem 
+                question="Do I need to provide content?" 
+                answer="I can help with the writing. Just tell me about your business and I'll craft the words that represent you well."
+              />
+              <FAQItem 
+                question="What do I need to get started?" 
+                answer="Just a 50% deposit, your business name, what you sell, and your WhatsApp number. That's enough to begin."
+              />
+              <FAQItem 
+                question="Can you build for any type of business?" 
+                answer="Yes — food, fashion, beauty, health, events, real estate, professional services. If you have a business I can build for it."
+              />
+              <FAQItem 
+                question="Do you offer maintenance after launch?" 
+                answer="Yes — I offer monthly maintenance from ₦5,000/month. This covers updates, fixes, and keeping your site running smoothly."
+              />
+              <FAQItem 
+                question="What if I don't like what you build?" 
+                answer="We revise until you're happy. I don't consider a project done until you do."
+              />
+              <FAQItem 
+                question="Can you help with my WhatsApp Business or social media too?" 
+                answer="I can set up your WhatsApp Business properly and advise on how your website and social media work together to bring you more customers."
+              />
+              <FAQItem 
+                question="Do you build remotely?" 
+                answer="Absolutely — everything is done remotely so I work with businesses anywhere in Nigeria. No need to meet in person."
+              />
             </div>
           </ScrollReveal>
         </div>
@@ -558,10 +717,10 @@ export default function Home() {
               <h3 className="text-xl md:text-2xl font-heading font-bold mb-3">
                 <span className="text-primary">Dore</span><span style={{ color: '#F5E8D8' }}>Build</span>
               </h3>
-              <p className="text-sm md:text-base mb-4" style={{ color: '#F5E8D8' }}>
+              <p className="text-sm md:text-base mb-4" style={{ color: 'rgba(245, 232, 216, 0.8)' }}>
                 Building the web for Nigerian businesses — one site at a time.
               </p>
-              <p className="text-xs md:text-sm text-muted-foreground">
+              <p className="text-xs md:text-sm" style={{ color: 'rgba(245, 232, 216, 0.5)' }}>
                 Based in Nigeria 🇳🇬
               </p>
             </div>
@@ -572,22 +731,22 @@ export default function Home() {
                 Quick Links
               </h4>
               <nav className="flex flex-col gap-3">
-                <button onClick={() => scrollToSection('hero')} className="text-sm text-left transition-colors duration-300 hover:text-primary" style={{ color: '#F5E8D8' }}>
+                <button onClick={() => scrollToSection('hero')} className="text-sm text-left transition-colors duration-200" style={{ color: 'rgba(245, 232, 216, 0.7)' }} onMouseEnter={(e) => e.currentTarget.style.color = '#DAA520'} onMouseLeave={(e) => e.currentTarget.style.color = 'rgba(245, 232, 216, 0.7)'}>
                   Home
                 </button>
-                <button onClick={() => scrollToSection('about')} className="text-sm text-left transition-colors duration-300 hover:text-primary" style={{ color: '#F5E8D8' }}>
+                <button onClick={() => scrollToSection('about')} className="text-sm text-left transition-colors duration-200" style={{ color: 'rgba(245, 232, 216, 0.7)' }} onMouseEnter={(e) => e.currentTarget.style.color = '#DAA520'} onMouseLeave={(e) => e.currentTarget.style.color = 'rgba(245, 232, 216, 0.7)'}>
                   About
                 </button>
-                <button onClick={() => scrollToSection('work')} className="text-sm text-left transition-colors duration-300 hover:text-primary" style={{ color: '#F5E8D8' }}>
+                <button onClick={() => scrollToSection('work')} className="text-sm text-left transition-colors duration-200" style={{ color: 'rgba(245, 232, 216, 0.7)' }} onMouseEnter={(e) => e.currentTarget.style.color = '#DAA520'} onMouseLeave={(e) => e.currentTarget.style.color = 'rgba(245, 232, 216, 0.7)'}>
                   Work
                 </button>
-                <button onClick={() => scrollToSection('services')} className="text-sm text-left transition-colors duration-300 hover:text-primary" style={{ color: '#F5E8D8' }}>
+                <button onClick={() => scrollToSection('services')} className="text-sm text-left transition-colors duration-200" style={{ color: 'rgba(245, 232, 216, 0.7)' }} onMouseEnter={(e) => e.currentTarget.style.color = '#DAA520'} onMouseLeave={(e) => e.currentTarget.style.color = 'rgba(245, 232, 216, 0.7)'}>
                   Services
                 </button>
-                <button onClick={() => scrollToSection('process')} className="text-sm text-left transition-colors duration-300 hover:text-primary" style={{ color: '#F5E8D8' }}>
+                <button onClick={() => scrollToSection('process')} className="text-sm text-left transition-colors duration-200" style={{ color: 'rgba(245, 232, 216, 0.7)' }} onMouseEnter={(e) => e.currentTarget.style.color = '#DAA520'} onMouseLeave={(e) => e.currentTarget.style.color = 'rgba(245, 232, 216, 0.7)'}>
                   Process
                 </button>
-                <button onClick={() => scrollToSection('contact')} className="text-sm text-left transition-colors duration-300 hover:text-primary" style={{ color: '#F5E8D8' }}>
+                <button onClick={() => scrollToSection('contact')} className="text-sm text-left transition-colors duration-200" style={{ color: 'rgba(245, 232, 216, 0.7)' }} onMouseEnter={(e) => e.currentTarget.style.color = '#DAA520'} onMouseLeave={(e) => e.currentTarget.style.color = 'rgba(245, 232, 216, 0.7)'}>
                   Contact
                 </button>
               </nav>
@@ -603,15 +762,19 @@ export default function Home() {
                   href="https://wa.me/2349139690181"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block text-sm transition-colors duration-300 hover:text-primary"
+                  className="block text-sm transition-colors duration-200"
                   style={{ color: '#F5E8D8' }}
+                  onMouseEnter={(e) => e.currentTarget.style.color = '#DAA520'}
+                  onMouseLeave={(e) => e.currentTarget.style.color = '#F5E8D8'}
                 >
                   +234 913 969 0181
                 </a>
                 <a
                   href="mailto:danielemeni07@gmail.com"
-                  className="block text-sm transition-colors duration-300 hover:text-primary"
+                  className="block text-sm transition-colors duration-200"
                   style={{ color: '#F5E8D8' }}
+                  onMouseEnter={(e) => e.currentTarget.style.color = '#DAA520'}
+                  onMouseLeave={(e) => e.currentTarget.style.color = '#F5E8D8'}
                 >
                   danielemeni07@gmail.com
                 </a>
