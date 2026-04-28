@@ -558,10 +558,10 @@ export default function Home() {
               <h3 className="text-xl md:text-2xl font-heading font-bold mb-3">
                 <span className="text-primary">Dore</span><span style={{ color: '#F5E8D8' }}>Build</span>
               </h3>
-              <p className="text-sm md:text-base mb-4" style={{ color: '#F5E8D8' }}>
+              <p className="text-sm md:text-base mb-4" style={{ color: 'rgba(245, 232, 216, 0.8)' }}>
                 Building the web for Nigerian businesses — one site at a time.
               </p>
-              <p className="text-xs md:text-sm text-muted-foreground">
+              <p className="text-xs md:text-sm" style={{ color: 'rgba(245, 232, 216, 0.5)' }}>
                 Based in Nigeria 🇳🇬
               </p>
             </div>
@@ -572,22 +572,22 @@ export default function Home() {
                 Quick Links
               </h4>
               <nav className="flex flex-col gap-3">
-                <button onClick={() => scrollToSection('hero')} className="text-sm text-left transition-colors duration-300 hover:text-primary" style={{ color: '#F5E8D8' }}>
+                <button onClick={() => scrollToSection('hero')} className="text-sm text-left transition-colors duration-200" style={{ color: 'rgba(245, 232, 216, 0.7)' }} onMouseEnter={(e) => e.currentTarget.style.color = '#DAA520'} onMouseLeave={(e) => e.currentTarget.style.color = 'rgba(245, 232, 216, 0.7)'}>
                   Home
                 </button>
-                <button onClick={() => scrollToSection('about')} className="text-sm text-left transition-colors duration-300 hover:text-primary" style={{ color: '#F5E8D8' }}>
+                <button onClick={() => scrollToSection('about')} className="text-sm text-left transition-colors duration-200" style={{ color: 'rgba(245, 232, 216, 0.7)' }} onMouseEnter={(e) => e.currentTarget.style.color = '#DAA520'} onMouseLeave={(e) => e.currentTarget.style.color = 'rgba(245, 232, 216, 0.7)'}>
                   About
                 </button>
-                <button onClick={() => scrollToSection('work')} className="text-sm text-left transition-colors duration-300 hover:text-primary" style={{ color: '#F5E8D8' }}>
+                <button onClick={() => scrollToSection('work')} className="text-sm text-left transition-colors duration-200" style={{ color: 'rgba(245, 232, 216, 0.7)' }} onMouseEnter={(e) => e.currentTarget.style.color = '#DAA520'} onMouseLeave={(e) => e.currentTarget.style.color = 'rgba(245, 232, 216, 0.7)'}>
                   Work
                 </button>
-                <button onClick={() => scrollToSection('services')} className="text-sm text-left transition-colors duration-300 hover:text-primary" style={{ color: '#F5E8D8' }}>
+                <button onClick={() => scrollToSection('services')} className="text-sm text-left transition-colors duration-200" style={{ color: 'rgba(245, 232, 216, 0.7)' }} onMouseEnter={(e) => e.currentTarget.style.color = '#DAA520'} onMouseLeave={(e) => e.currentTarget.style.color = 'rgba(245, 232, 216, 0.7)'}>
                   Services
                 </button>
-                <button onClick={() => scrollToSection('process')} className="text-sm text-left transition-colors duration-300 hover:text-primary" style={{ color: '#F5E8D8' }}>
+                <button onClick={() => scrollToSection('process')} className="text-sm text-left transition-colors duration-200" style={{ color: 'rgba(245, 232, 216, 0.7)' }} onMouseEnter={(e) => e.currentTarget.style.color = '#DAA520'} onMouseLeave={(e) => e.currentTarget.style.color = 'rgba(245, 232, 216, 0.7)'}>
                   Process
                 </button>
-                <button onClick={() => scrollToSection('contact')} className="text-sm text-left transition-colors duration-300 hover:text-primary" style={{ color: '#F5E8D8' }}>
+                <button onClick={() => scrollToSection('contact')} className="text-sm text-left transition-colors duration-200" style={{ color: 'rgba(245, 232, 216, 0.7)' }} onMouseEnter={(e) => e.currentTarget.style.color = '#DAA520'} onMouseLeave={(e) => e.currentTarget.style.color = 'rgba(245, 232, 216, 0.7)'}>
                   Contact
                 </button>
               </nav>
@@ -603,15 +603,19 @@ export default function Home() {
                   href="https://wa.me/2349139690181"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block text-sm transition-colors duration-300 hover:text-primary"
+                  className="block text-sm transition-colors duration-200"
                   style={{ color: '#F5E8D8' }}
+                  onMouseEnter={(e) => e.currentTarget.style.color = '#DAA520'}
+                  onMouseLeave={(e) => e.currentTarget.style.color = '#F5E8D8'}
                 >
                   +234 913 969 0181
                 </a>
                 <a
                   href="mailto:danielemeni07@gmail.com"
-                  className="block text-sm transition-colors duration-300 hover:text-primary"
+                  className="block text-sm transition-colors duration-200"
                   style={{ color: '#F5E8D8' }}
+                  onMouseEnter={(e) => e.currentTarget.style.color = '#DAA520'}
+                  onMouseLeave={(e) => e.currentTarget.style.color = '#F5E8D8'}
                 >
                   danielemeni07@gmail.com
                 </a>
