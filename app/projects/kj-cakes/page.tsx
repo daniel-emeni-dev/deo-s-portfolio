@@ -56,7 +56,7 @@ export default function KJCakesCase() {
       <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur border-b border-border">
         <nav className="max-w-5xl mx-auto px-6 md:px-12 py-6 flex items-center justify-between">
           <Link href="/" className="text-2xl font-heading font-bold tracking-tight">
-            <span className="text-primary">DEO</span> Websites
+            <span className="text-primary">Dore</span><span style={{ color: '#F5E8D8' }}>Build</span>
           </Link>
           <Link
             href="/"
@@ -147,7 +147,7 @@ export default function KJCakesCase() {
       <footer className="border-t border-primary py-12 md:py-16 px-6 md:px-12 text-center mt-12">
         <div className="max-w-5xl mx-auto">
           <p className="text-muted-foreground text-sm md:text-base">
-            © 2026 DEO Websites — Built with intention.
+            © 2026 DoreBuild — Built with intention.
           </p>
         </div>
       </footer>
