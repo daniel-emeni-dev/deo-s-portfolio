@@ -50,12 +50,12 @@ const FAQItem = ({ question, answer }: { question: string; answer: string }) => 
         backgroundColor: '#252525',
         borderColor: isOpen ? '#DAA520' : 'rgba(218, 165, 32, 0.25)',
         borderWidth: '1px',
-        boxShadow: isOpen ? '0 12px 32px rgba(218, 165, 32, 0.2)' : 'none'
+        boxShadow: isOpen ? '0 4px 20px rgba(218, 165, 32, 0.08)' : 'none'
       }}
       onClick={() => setIsOpen(!isOpen)}
       onMouseEnter={(e) => {
         if (!isOpen) {
-          e.currentTarget.style.borderColor = 'rgba(218, 165, 32, 0.5)';
+          e.currentTarget.style.borderColor = 'rgba(218, 165, 32, 0.6)';
         }
       }}
       onMouseLeave={(e) => {
@@ -250,9 +250,9 @@ export default function Home() {
                   border: '1px solid rgba(218, 165, 32, 0.25)'
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.borderColor = '#DAA520';
-                  e.currentTarget.style.boxShadow = '0 12px 32px rgba(218, 165, 32, 0.2)';
-                  e.currentTarget.style.transform = 'translateY(-4px)';
+                  e.currentTarget.style.borderColor = 'rgba(218, 165, 32, 0.6)';
+                  e.currentTarget.style.boxShadow = '0 4px 20px rgba(218, 165, 32, 0.08)';
+                  e.currentTarget.style.transform = 'translateY(-2px)';
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.borderColor = 'rgba(218, 165, 32, 0.25)';
@@ -287,9 +287,9 @@ export default function Home() {
                   border: '1px solid rgba(218, 165, 32, 0.25)'
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.borderColor = '#DAA520';
-                  e.currentTarget.style.boxShadow = '0 12px 32px rgba(218, 165, 32, 0.2)';
-                  e.currentTarget.style.transform = 'translateY(-4px)';
+                  e.currentTarget.style.borderColor = 'rgba(218, 165, 32, 0.6)';
+                  e.currentTarget.style.boxShadow = '0 4px 20px rgba(218, 165, 32, 0.08)';
+                  e.currentTarget.style.transform = 'translateY(-2px)';
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.borderColor = 'rgba(218, 165, 32, 0.25)';
@@ -344,9 +344,9 @@ export default function Home() {
                 border: '1px solid rgba(218, 165, 32, 0.25)'
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.borderColor = '#DAA520';
-                e.currentTarget.style.boxShadow = '0 12px 32px rgba(218, 165, 32, 0.2)';
-                e.currentTarget.style.transform = 'translateY(-4px)';
+                e.currentTarget.style.borderColor = 'rgba(218, 165, 32, 0.6)';
+                e.currentTarget.style.boxShadow = '0 4px 20px rgba(218, 165, 32, 0.08)';
+                e.currentTarget.style.transform = 'translateY(-2px)';
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.borderColor = 'rgba(218, 165, 32, 0.25)';
@@ -358,7 +358,7 @@ export default function Home() {
                 <p className="text-base leading-relaxed mb-6">A clean, fast, mobile-first website that represents your brand professionally and converts visitors into customers.</p>
                 <div className="flex items-center gap-3 mb-4">
                   <span className="text-sm line-through" style={{ color: '#888888' }}>₦60,000</span>
-                  <p className="font-bold text-lg" style={{ color: '#DAA520' }}>₦30,000</p>
+                  <p className="font-bold text-lg" style={{ color: '#DAA520' }}>Starting from ₦30,000</p>
                 </div>
                 <span className="inline-block px-3 py-1 text-xs font-medium rounded" style={{ backgroundColor: 'rgba(255, 111, 97, 0.12)', color: '#FF6F61', border: '1px solid rgba(255, 111, 97, 0.3)' }}>Most Popular</span>
               </div>
@@ -369,9 +369,9 @@ export default function Home() {
                 border: '1px solid rgba(218, 165, 32, 0.25)'
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.borderColor = '#DAA520';
-                e.currentTarget.style.boxShadow = '0 12px 32px rgba(218, 165, 32, 0.2)';
-                e.currentTarget.style.transform = 'translateY(-4px)';
+                e.currentTarget.style.borderColor = 'rgba(218, 165, 32, 0.6)';
+                e.currentTarget.style.boxShadow = '0 4px 20px rgba(218, 165, 32, 0.08)';
+                e.currentTarget.style.transform = 'translateY(-2px)';
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.borderColor = 'rgba(218, 165, 32, 0.25)';
@@ -383,7 +383,7 @@ export default function Home() {
                 <p className="text-base leading-relaxed mb-6">A single focused page built to promote one product, service, or event — designed to drive action.</p>
                 <div className="flex items-center gap-3">
                   <span className="text-sm line-through" style={{ color: '#888888' }}>₦35,000</span>
-                  <p className="font-bold text-lg" style={{ color: '#DAA520' }}>₦15,000</p>
+                  <p className="font-bold text-lg" style={{ color: '#DAA520' }}>Starting from ₦15,000</p>
                 </div>
               </div>
 
@@ -393,9 +393,9 @@ export default function Home() {
                 border: '1px solid rgba(218, 165, 32, 0.25)'
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.borderColor = '#DAA520';
-                e.currentTarget.style.boxShadow = '0 12px 32px rgba(218, 165, 32, 0.2)';
-                e.currentTarget.style.transform = 'translateY(-4px)';
+                e.currentTarget.style.borderColor = 'rgba(218, 165, 32, 0.6)';
+                e.currentTarget.style.boxShadow = '0 4px 20px rgba(218, 165, 32, 0.08)';
+                e.currentTarget.style.transform = 'translateY(-2px)';
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.borderColor = 'rgba(218, 165, 32, 0.25)';
@@ -407,7 +407,7 @@ export default function Home() {
                 <p className="text-base leading-relaxed mb-6">Your website plus the basics that help you show up on Google — page titles, meta descriptions, speed optimisation, and Google indexing.</p>
                 <div className="flex items-center gap-3">
                   <span className="text-sm line-through" style={{ color: '#888888' }}>₦90,000</span>
-                  <p className="font-bold text-lg" style={{ color: '#DAA520' }}>₦45,000</p>
+                  <p className="font-bold text-lg" style={{ color: '#DAA520' }}>Starting from ₦45,000</p>
                 </div>
               </div>
             </div>
@@ -528,9 +528,9 @@ export default function Home() {
                 border: '1px solid rgba(218, 165, 32, 0.25)'
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.borderColor = '#DAA520';
-                e.currentTarget.style.boxShadow = '0 12px 32px rgba(218, 165, 32, 0.2)';
-                e.currentTarget.style.transform = 'translateY(-4px)';
+                e.currentTarget.style.borderColor = 'rgba(218, 165, 32, 0.6)';
+                e.currentTarget.style.boxShadow = '0 4px 20px rgba(218, 165, 32, 0.08)';
+                e.currentTarget.style.transform = 'translateY(-2px)';
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.borderColor = 'rgba(218, 165, 32, 0.25)';
@@ -548,9 +548,9 @@ export default function Home() {
                 border: '1px solid rgba(218, 165, 32, 0.25)'
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.borderColor = '#DAA520';
-                e.currentTarget.style.boxShadow = '0 12px 32px rgba(218, 165, 32, 0.2)';
-                e.currentTarget.style.transform = 'translateY(-4px)';
+                e.currentTarget.style.borderColor = 'rgba(218, 165, 32, 0.6)';
+                e.currentTarget.style.boxShadow = '0 4px 20px rgba(218, 165, 32, 0.08)';
+                e.currentTarget.style.transform = 'translateY(-2px)';
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.borderColor = 'rgba(218, 165, 32, 0.25)';
@@ -568,9 +568,9 @@ export default function Home() {
                 border: '1px solid rgba(218, 165, 32, 0.25)'
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.borderColor = '#DAA520';
-                e.currentTarget.style.boxShadow = '0 12px 32px rgba(218, 165, 32, 0.2)';
-                e.currentTarget.style.transform = 'translateY(-4px)';
+                e.currentTarget.style.borderColor = 'rgba(218, 165, 32, 0.6)';
+                e.currentTarget.style.boxShadow = '0 4px 20px rgba(218, 165, 32, 0.08)';
+                e.currentTarget.style.transform = 'translateY(-2px)';
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.borderColor = 'rgba(218, 165, 32, 0.25)';
@@ -588,9 +588,9 @@ export default function Home() {
                 border: '1px solid rgba(218, 165, 32, 0.25)'
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.borderColor = '#DAA520';
-                e.currentTarget.style.boxShadow = '0 12px 32px rgba(218, 165, 32, 0.2)';
-                e.currentTarget.style.transform = 'translateY(-4px)';
+                e.currentTarget.style.borderColor = 'rgba(218, 165, 32, 0.6)';
+                e.currentTarget.style.boxShadow = '0 4px 20px rgba(218, 165, 32, 0.08)';
+                e.currentTarget.style.transform = 'translateY(-2px)';
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.borderColor = 'rgba(218, 165, 32, 0.25)';
