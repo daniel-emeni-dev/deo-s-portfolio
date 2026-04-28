@@ -103,7 +103,7 @@ export default function Home() {
       <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur border-b border-border">
         <nav className="max-w-5xl mx-auto px-6 md:px-12 py-6 flex items-center justify-between">
           <div className="text-2xl font-heading font-bold tracking-tight">
-            <span className="text-primary">DEO</span> Websites
+            <span className="text-primary">Dore</span><span style={{ color: '#F5E8D8' }}>Build</span>
           </div>
           <div className="hidden md:flex gap-12">
             <button
@@ -317,7 +317,10 @@ export default function Home() {
                 <Globe size={32} className="text-primary mb-4" />
                 <h3 className="text-xl md:text-2xl font-heading font-bold mb-3">Business Website</h3>
                 <p className="text-base leading-relaxed mb-6">A clean, fast, mobile-first website that represents your brand professionally and converts visitors into customers.</p>
-                <p className="font-bold mb-4" style={{ color: '#DAA520' }}>Starting from ₦30,000</p>
+                <div className="flex items-center gap-3 mb-4">
+                  <span className="text-sm line-through" style={{ color: '#888888' }}>₦60,000</span>
+                  <p className="font-bold text-lg" style={{ color: '#DAA520' }}>₦30,000</p>
+                </div>
                 <span className="inline-block px-3 py-1 text-xs font-medium rounded" style={{ backgroundColor: 'rgba(255, 111, 97, 0.12)', color: '#FF6F61', border: '1px solid rgba(255, 111, 97, 0.3)' }}>Most Popular</span>
               </div>
 
@@ -339,7 +342,10 @@ export default function Home() {
                 <Rocket size={32} className="text-primary mb-4" />
                 <h3 className="text-xl md:text-2xl font-heading font-bold mb-3">Landing Page</h3>
                 <p className="text-base leading-relaxed mb-6">A single focused page built to promote one product, service, or event — designed to drive action.</p>
-                <p className="font-bold" style={{ color: '#DAA520' }}>Starting from ₦15,000</p>
+                <div className="flex items-center gap-3">
+                  <span className="text-sm line-through" style={{ color: '#888888' }}>₦35,000</span>
+                  <p className="font-bold text-lg" style={{ color: '#DAA520' }}>₦15,000</p>
+                </div>
               </div>
 
               {/* Card 3: Website + SEO */}
@@ -360,12 +366,17 @@ export default function Home() {
                 <Settings size={32} className="text-primary mb-4" />
                 <h3 className="text-xl md:text-2xl font-heading font-bold mb-3">Website + SEO Setup</h3>
                 <p className="text-base leading-relaxed mb-6">Your website plus the basics that help you show up on Google — page titles, meta descriptions, speed optimisation, and Google indexing.</p>
-                <p className="font-bold" style={{ color: '#DAA520' }}>Starting from ₦45,000</p>
+                <div className="flex items-center gap-3">
+                  <span className="text-sm line-through" style={{ color: '#888888' }}>₦90,000</span>
+                  <p className="font-bold text-lg" style={{ color: '#DAA520' }}>₦45,000</p>
+                </div>
               </div>
             </div>
 
-            <div className="text-center text-base">
-              <p>Prices are flexible depending on your needs and budget. <a href="https://wa.me/2349139690181" target="_blank" rel="noopener noreferrer" className="text-primary font-medium hover:text-secondary transition-colors">Let's talk</a> — no pressure.</p>
+            <div className="text-center">
+              <p className="text-sm italic text-muted-foreground">
+                Introductory rates while I build my portfolio — prices will increase as I take on more clients. Prices are flexible depending on your needs and budget. <a href="https://wa.me/2349139690181" target="_blank" rel="noopener noreferrer" className="text-primary font-medium hover:text-secondary transition-colors">Let's talk</a> — no pressure.
+              </p>
             </div>
           </ScrollReveal>
         </div>
@@ -545,7 +556,7 @@ export default function Home() {
             {/* Column 1 - Brand */}
             <div>
               <h3 className="text-xl md:text-2xl font-heading font-bold mb-3">
-                <span className="text-primary">DEO</span> <span style={{ color: '#F5E8D8' }}>Websites</span>
+                <span className="text-primary">Dore</span><span style={{ color: '#F5E8D8' }}>Build</span>
               </h3>
               <p className="text-sm md:text-base mb-4" style={{ color: '#F5E8D8' }}>
                 Building the web for Nigerian businesses — one site at a time.
@@ -616,7 +627,7 @@ export default function Home() {
 
           {/* Bottom Section */}
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 text-xs md:text-sm text-muted-foreground">
-            <p>© 2026 DEO Websites — Built with intention.</p>
+            <p>© 2026 DoreBuild — Built with intention.</p>
             <p>Handcrafted by Daniel Emeni Ogheneruno</p>
           </div>
         </div>
