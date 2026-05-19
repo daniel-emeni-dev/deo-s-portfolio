@@ -184,7 +184,7 @@ export default function Home() {
               I Build<br className="hidden sm:block" /> Websites <br className="hidden sm:block" /><span className="text-primary">That Work</span>.
             </h1>
             <p className="text-lg md:text-xl mb-12 max-w-2xl mx-auto leading-relaxed" style={{ color: 'rgba(245, 232, 216, 0.8)' }}>
-              Hi, I&apos;m Daniel — a Nigerian web developer helping small businesses look professional, get found online, and win more customers.
+              Hi, I&apos;m Daniel. A software developer who turns business ideas into digital experiences that actually work. No fluff, no overpriced agencies, just clean fast intentional builds that make your business look like it means business.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center stagger-children">
               <button
@@ -215,10 +215,10 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-start">
               <div className="space-y-6">
                 <p className="text-lg md:text-xl leading-relaxed">
-                  I&apos;m <strong>Daniel Emeni Ogheneruno</strong>, a self-taught web developer based in Nigeria. I build things that are visually sharp, responsive, and actually solve problems for real businesses.
+                  I&apos;m Daniel Emeni Ogheneruno. Self-taught, Nigeria-based, and genuinely obsessed with building things that work beautifully. Websites, web apps, landing pages, digital setups. If it lives on the internet and helps a business grow, I build it.
                 </p>
                 <p className="text-lg md:text-xl leading-relaxed">
-                  I got into this because I love it — and because I want to build an honest living from something meaningful. Every site I build carries that intention.
+                  I didn&apos;t get into this purely for the aesthetic. Okay maybe a little. But mostly I got into this because I love it and because I believe every business deserves a digital presence that reflects how serious they are. Big agency quality. Real person prices. That&apos;s the whole idea.
                 </p>
               </div>
 
@@ -240,7 +240,10 @@ export default function Home() {
       <section className="py-20 md:py-32 px-6 md:px-12" id="work">
         <div className="max-w-5xl mx-auto">
           <ScrollReveal id="work-content">
-            <h2 className="heading-accent text-4xl md:text-5xl font-heading font-black mb-16">What I&apos;ve <span className="text-primary">Built</span></h2>
+            <h2 className="heading-accent text-4xl md:text-5xl font-heading font-black mb-4">What I&apos;ve <span className="text-primary">Built</span></h2>
+            <p className="text-lg md:text-xl mb-16 max-w-3xl" style={{ color: 'rgba(245, 232, 216, 0.8)' }}>
+              Every project here started with a real conversation. Here&apos;s what happened next.
+            </p>
 
             <div className="grid gap-8 mb-12">
               {/* KJ Cakes Project */}
@@ -261,11 +264,11 @@ export default function Home() {
                 }}>
                   <div className="mb-6">
                     <h3 className="text-2xl md:text-3xl font-heading font-bold mb-2">KJ Cakes PH</h3>
-                    <p className="text-muted-foreground text-sm font-medium">Turning a luxury cake brand into a full digital presence</p>
+                    <p className="text-muted-foreground text-sm font-medium">Luxury cake brand meets intentional design</p>
                   </div>
 
                   <p className="text-base md:text-lg leading-relaxed mb-8">
-                    A luxury cake business in Port Harcourt. Full brand website with gallery, services, and WhatsApp booking integration.
+                    A luxury cake business in Port Harcourt that deserved more than a WhatsApp status. We gave them a full brand website with a gallery, services, and a booking button that goes straight to WhatsApp. One tap from craving to conversation.
                   </p>
 
                   <div className="flex flex-wrap gap-2 mb-8">
@@ -298,11 +301,11 @@ export default function Home() {
                 }}>
                   <div className="mb-6">
                     <h3 className="text-2xl md:text-3xl font-heading font-bold mb-2">Beleza Natural Hair Clinic</h3>
-                    <p className="text-muted-foreground text-sm font-medium">Reimagining what a Nigerian hair clinic could look like</p>
+                    <p className="text-muted-foreground text-sm font-medium">A hair clinic from the future</p>
                   </div>
 
                   <p className="text-base md:text-lg leading-relaxed mb-8">
-                    A futuristic hair and scalp care clinic concept. Full brand website featuring AI-powered scalp analysis, services showcase, and WhatsApp integration.
+                    What if a hair clinic felt like the future? This concept brand imagines exactly that. AI scalp analysis, premium services, and a digital experience that makes competitors look like they&apos;re still in 2015.
                   </p>
 
                   <div className="flex flex-wrap gap-2 mb-8">
@@ -322,7 +325,7 @@ export default function Home() {
               backgroundColor: '#252525',
               border: '2px dashed #DAA520'
             }}>
-              <p className="text-muted-foreground">More projects coming soon</p>
+              <p className="text-muted-foreground">More projects in progress. Good things take 7 days or less around here.</p>
             </div>
           </ScrollReveal>
         </div>
@@ -334,7 +337,7 @@ export default function Home() {
           <ScrollReveal id="services-content">
             <h2 className="heading-accent text-4xl md:text-5xl font-heading font-black mb-4">What I <span className="text-primary">Offer</span></h2>
             <p className="text-lg md:text-xl mb-16 max-w-3xl" style={{ color: 'rgba(245, 232, 216, 0.8)' }}>
-              Every project is built with care, clarity, and your business goals in mind.
+              Whether you need a full website, a focused landing page, or your entire digital presence sorted out, this is what&apos;s on the menu.
             </p>
 
             <div className="grid md:grid-cols-3 gap-8 mb-12">
@@ -355,7 +358,7 @@ export default function Home() {
               }}>
                 <Globe size={32} className="text-primary mb-4" />
                 <h3 className="text-xl md:text-2xl font-heading font-bold mb-3">Business Website</h3>
-                <p className="text-base leading-relaxed mb-6">A clean, fast, mobile-first website that represents your brand professionally and converts visitors into customers.</p>
+                <p className="text-base leading-relaxed mb-6">Clean, fast, and mobile first. The kind of website that makes people think you&apos;ve been in the game for years even if you just started. Built to look great, load fast, and turn visitors into customers.</p>
                 <div className="flex items-center gap-3 mb-4">
                   <span className="text-sm line-through" style={{ color: '#888888' }}>₦60,000</span>
                   <p className="font-bold text-lg" style={{ color: '#DAA520' }}>Starting from ₦30,000</p>
@@ -380,7 +383,7 @@ export default function Home() {
               }}>
                 <Rocket size={32} className="text-primary mb-4" />
                 <h3 className="text-xl md:text-2xl font-heading font-bold mb-3">Landing Page</h3>
-                <p className="text-base leading-relaxed mb-6">A single focused page built to promote one product, service, or event — designed to drive action.</p>
+                <p className="text-base leading-relaxed mb-6">One page. One goal. Maximum impact. Perfect for a product launch, a service promo, or anything that needs people to stop scrolling and actually do something.</p>
                 <div className="flex items-center gap-3">
                   <span className="text-sm line-through" style={{ color: '#888888' }}>₦35,000</span>
                   <p className="font-bold text-lg" style={{ color: '#DAA520' }}>Starting from ₦15,000</p>
@@ -404,7 +407,7 @@ export default function Home() {
               }}>
                 <Settings size={32} className="text-primary mb-4" />
                 <h3 className="text-xl md:text-2xl font-heading font-bold mb-3">Website + SEO Setup</h3>
-                <p className="text-base leading-relaxed mb-6">Your website plus the basics that help you show up on Google — page titles, meta descriptions, speed optimisation, and Google indexing.</p>
+                <p className="text-base leading-relaxed mb-6">A website is great. A website people can actually find on Google is better. This package gives you both. Built right, optimised from day one, and ready to show up where it matters.</p>
                 <div className="flex items-center gap-3">
                   <span className="text-sm line-through" style={{ color: '#888888' }}>₦90,000</span>
                   <p className="font-bold text-lg" style={{ color: '#DAA520' }}>Starting from ₦45,000</p>
@@ -414,7 +417,7 @@ export default function Home() {
 
             <div className="text-center">
               <p className="text-sm italic text-muted-foreground">
-                Introductory rates while I build my portfolio — prices will increase as I take on more clients. Prices are flexible depending on your needs and budget. <a href="https://wa.me/2349139690181" target="_blank" rel="noopener noreferrer" className="text-primary font-medium hover:text-secondary transition-colors">Let's talk</a> — no pressure.
+                Also handle WhatsApp Business setup and social media integration. Not sure what you need? <a href="https://wa.me/2349139690181" target="_blank" rel="noopener noreferrer" className="text-primary font-medium hover:text-secondary transition-colors">Message me</a> and we&apos;ll figure it out together. No awkward sales pitch, I promise.
               </p>
             </div>
           </ScrollReveal>
@@ -427,7 +430,7 @@ export default function Home() {
           <ScrollReveal id="process-content">
             <h2 className="heading-accent text-4xl md:text-5xl font-heading font-black mb-4">How It <span className="text-primary">Works</span></h2>
             <p className="text-lg md:text-xl mb-16 max-w-3xl" style={{ color: 'rgba(245, 232, 216, 0.8)' }}>
-              Simple, transparent, and built around you.
+              No mystery, no endless back and forth. Just a clear process that gets you from idea to live in 7 days.
             </p>
 
             <div className="relative pl-12">
@@ -449,7 +452,7 @@ export default function Home() {
                     {/* Title */}
                     <h3 className="text-2xl md:text-3xl font-heading font-bold mb-3">Discovery</h3>
                     {/* Description */}
-                    <p className="text-base md:text-lg leading-relaxed">We have a quick conversation about your business, your goals, and what you need. No jargon, no pressure.</p>
+                    <p className="text-base md:text-lg leading-relaxed">We talk. You tell me about your business, your goals, and what you actually need. I listen, ask the right questions, and we figure out exactly what needs to be built. No jargon, just a real conversation.</p>
                   </div>
                 </div>
 
@@ -467,7 +470,7 @@ export default function Home() {
                     {/* Title */}
                     <h3 className="text-2xl md:text-3xl font-heading font-bold mb-3">Design & Build</h3>
                     {/* Description */}
-                    <p className="text-base md:text-lg leading-relaxed">I get to work building your site — clean, fast, and designed to represent your brand properly.</p>
+                    <p className="text-base md:text-lg leading-relaxed">This is where I disappear for a few days and come back with something that makes you go &apos;wait, that actually looks like me.&apos; Clean code, sharp visuals, built properly from the ground up.</p>
                   </div>
                 </div>
 
@@ -485,7 +488,7 @@ export default function Home() {
                     {/* Title */}
                     <h3 className="text-2xl md:text-3xl font-heading font-bold mb-3">Review & Refine</h3>
                     {/* Description */}
-                    <p className="text-base md:text-lg leading-relaxed">You see the first version and we adjust together until it feels exactly right.</p>
+                    <p className="text-base md:text-lg leading-relaxed">You see it. You react. We adjust. We repeat until every single detail feels exactly right. You&apos;re not just approving something, you&apos;re shaping it.</p>
                   </div>
                 </div>
 
@@ -503,7 +506,7 @@ export default function Home() {
                     {/* Title */}
                     <h3 className="text-2xl md:text-3xl font-heading font-bold mb-3">Launch</h3>
                     {/* Description */}
-                    <p className="text-base md:text-lg leading-relaxed">Your site goes live. I handle the deployment and make sure everything works perfectly.</p>
+                    <p className="text-base md:text-lg leading-relaxed">We go live. I handle everything including deployment, testing, and making sure nothing breaks at 2am. You just share the link and enjoy the reactions.</p>
                   </div>
                 </div>
               </div>
@@ -518,7 +521,7 @@ export default function Home() {
           <ScrollReveal id="guarantee-content">
             <h2 className="heading-accent text-4xl md:text-5xl font-heading font-black mb-4">My <span className="text-primary">Guarantee</span></h2>
             <p className="text-lg md:text-xl mb-16 max-w-3xl" style={{ color: 'rgba(245, 232, 216, 0.8)' }}>
-              Every project I take on comes with these promises — no exceptions.
+              These aren&apos;t just nice words on a website. They&apos;re the actual terms I hold myself to on every single project.
             </p>
 
             <div className="grid md:grid-cols-2 gap-8">
@@ -539,7 +542,7 @@ export default function Home() {
               }}>
                 <Clock size={32} className="text-primary mb-4" />
                 <h3 className="text-xl md:text-2xl font-heading font-bold mb-3">7-Day Delivery</h3>
-                <p className="text-base leading-relaxed">Your website will be ready within 7 days of our first conversation. No long waits, no excuses.</p>
+                <p className="text-base leading-relaxed">Seven days from our first conversation to a live working solution. Not approximately seven days. Not we&apos;re almost there. Seven days, on the clock from day one.</p>
               </div>
 
               {/* Card 2: Mobile-First Always */}
@@ -559,7 +562,7 @@ export default function Home() {
               }}>
                 <Smartphone size={32} className="text-primary mb-4" />
                 <h3 className="text-xl md:text-2xl font-heading font-bold mb-3">Mobile-First Always</h3>
-                <p className="text-base leading-relaxed">Every site I build looks and works perfectly on mobile. That&apos;s where your customers are.</p>
+                <p className="text-base leading-relaxed">Your customers are on their phones right now. Every build I deliver works perfectly on mobile because a website that breaks on a budget Android is a website that&apos;s losing you money.</p>
               </div>
 
               {/* Card 3: SEO-Ready From Day One */}
@@ -579,7 +582,7 @@ export default function Home() {
               }}>
                 <Search size={32} className="text-primary mb-4" />
                 <h3 className="text-xl md:text-2xl font-heading font-bold mb-3">SEO-Ready From Day One</h3>
-                <p className="text-base leading-relaxed">Your site will be set up to be found on Google from launch — proper titles, meta descriptions, and fast loading speeds.</p>
+                <p className="text-base leading-relaxed">You shouldn&apos;t have to pay extra to be findable. Every project launches with proper SEO foundations built in because showing up on Google shouldn&apos;t be an afterthought.</p>
               </div>
 
               {/* Card 4: Unlimited Revisions During Build */}
@@ -599,7 +602,7 @@ export default function Home() {
               }}>
                 <RefreshCw size={32} className="text-primary mb-4" />
                 <h3 className="text-xl md:text-2xl font-heading font-bold mb-3">Unlimited Revisions During Build</h3>
-                <p className="text-base leading-relaxed">We adjust until it feels exactly right. Your satisfaction isn&apos;t negotiable.</p>
+                <p className="text-base leading-relaxed">Not three revisions and we&apos;re done. Unlimited, during the build. We keep going until it&apos;s right. Your satisfaction isn&apos;t a bonus feature. It&apos;s the whole point.</p>
               </div>
             </div>
           </ScrollReveal>
@@ -612,41 +615,41 @@ export default function Home() {
           <ScrollReveal id="faq-content">
             <h2 className="heading-accent text-4xl md:text-5xl font-heading font-black mb-4">Common <span className="text-primary">Questions</span></h2>
             <p className="text-lg md:text-xl mb-16 max-w-3xl" style={{ color: 'rgba(245, 232, 216, 0.8)' }}>
-              Everything you need to know before we work together.
+              The things everyone wonders but not everyone asks. Consider this your no awkward questions zone.
             </p>
 
             <div className="space-y-4">
               <FAQItem 
-                question="How long does a website take?" 
-                answer="Most business websites are ready within 7 days of our first conversation. Simple landing pages can be done in 3 days."
+                question="How long does a project take?" 
+                answer="Most websites and landing pages are live within 7 days. Seriously. Complex web apps get a custom timeline but I'll tell you exactly what to expect before we begin. No surprise delays."
               />
               <FAQItem 
                 question="Do I need to provide content?" 
-                answer="I can help with the writing. Just tell me about your business and I'll craft the words that represent you well."
+                answer="Nope. Tell me about your business in plain English, what you do, who you serve, why you're better, and I'll turn it into copy that actually sounds like you. Just better."
               />
               <FAQItem 
                 question="What do I need to get started?" 
-                answer="Just a 50% deposit, your business name, what you sell, and your WhatsApp number. That's enough to begin."
+                answer="A 50% deposit, your business name, what you sell, and your WhatsApp number. That's genuinely it. We can be building by tomorrow."
               />
               <FAQItem 
                 question="Can you build for any type of business?" 
-                answer="Yes — food, fashion, beauty, health, events, real estate, professional services. If you have a business I can build for it."
+                answer="Food, fashion, beauty, events, real estate, health, startups. If you have a business and you want it to look serious online then yes, I can build for you."
               />
               <FAQItem 
-                question="Do you offer maintenance after launch?" 
-                answer="Yes — I offer monthly maintenance from ₦5,000/month. This covers updates, fixes, and keeping your site running smoothly."
+                question="Do you offer support after launch?" 
+                answer="Yes, monthly maintenance from ₦5,000 per month. Updates, fixes, keeping things running smoothly. I don't build your house and then refuse to fix the tap. That's not how this works."
               />
               <FAQItem 
-                question="What if I don't like what you build?" 
-                answer="We revise until you're happy. I don't consider a project done until you do."
+                question="What if I'm not satisfied?" 
+                answer="Then we're not done yet. Simple as that. I don't invoice the final 50% until you're genuinely happy. Your satisfaction isn't negotiable, it's the whole business model."
               />
               <FAQItem 
-                question="Can you help with my WhatsApp Business or social media too?" 
-                answer="I can set up your WhatsApp Business properly and advise on how your website and social media work together to bring you more customers."
+                question="Can you help with WhatsApp Business and social media?" 
+                answer="Yes. I set up WhatsApp Business properly and show you how your website and social platforms work together to consistently bring customers in. It's all connected."
               />
               <FAQItem 
                 question="Do you build remotely?" 
-                answer="Absolutely — everything is done remotely so I work with businesses anywhere in Nigeria. No need to meet in person."
+                answer="100%. Everything is handled online which means I work with businesses anywhere in Nigeria and beyond. All you need is a phone and something worth building. I'll handle the rest."
               />
             </div>
           </ScrollReveal>
@@ -659,13 +662,13 @@ export default function Home() {
           <ScrollReveal id="contact-content">
             <h2 className="heading-accent text-4xl md:text-5xl font-heading font-black mb-6 text-center">Let&apos;s Build <span className="text-primary">Something</span></h2>
             <p className="text-lg md:text-xl text-center mb-16 max-w-2xl mx-auto" style={{ color: 'rgba(245, 232, 216, 0.8)' }}>
-              Have a project in mind? I&apos;d love to hear about it and explore how we can work together.
+              Got a business? Got an idea? Even just a vague feeling that your online presence could be better? That&apos;s enough. Let&apos;s talk.
             </p>
 
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               <div className="rounded-lg p-8 md:p-10" style={{ borderColor: 'rgba(218, 165, 32, 0.2)', borderWidth: '1px' }}>
                 <h3 className="text-xl md:text-2xl font-heading font-bold mb-3">WhatsApp</h3>
-                <p className="text-muted-foreground mb-6">Quick response, direct communication. Let&apos;s chat there.</p>
+                <p className="text-muted-foreground mb-6">Fastest way to reach me. I read every message usually within the hour. Let&apos;s figure out what we&apos;re building.</p>
                 <a
                   href="https://wa.me/2349139690181"
                   target="_blank"
@@ -678,7 +681,7 @@ export default function Home() {
 
               <div className="rounded-lg p-8 md:p-10" style={{ borderColor: 'rgba(218, 165, 32, 0.2)', borderWidth: '1px' }}>
                 <h3 className="text-xl md:text-2xl font-heading font-bold mb-3">Email</h3>
-                <p className="text-muted-foreground mb-6">Send me a detailed message with your project details.</p>
+                <p className="text-muted-foreground mb-6">More of an email person? Respect. Send me your details and I&apos;ll get back to you within 24 hours with a clear plan.</p>
                 <a
                   href="mailto:danielemeni07@gmail.com"
                   className="text-primary font-medium inline-flex items-center gap-2 hover:text-secondary transition-colors"
@@ -700,7 +703,7 @@ export default function Home() {
                 </a>
               </div>
               <p className="text-sm md:text-base text-muted-foreground">
-                <strong className="text-foreground">Response time:</strong> I typically reply within 24 hours. Let&apos;s make something great together.
+                Fair warning. I reply fast. You might actually get a response before you&apos;ve put your phone down.
               </p>
             </div>
           </ScrollReveal>
@@ -718,7 +721,7 @@ export default function Home() {
                 <span className="text-primary">Dore</span><span style={{ color: '#F5E8D8' }}>Build</span>
               </h3>
               <p className="text-sm md:text-base mb-4" style={{ color: 'rgba(245, 232, 216, 0.8)' }}>
-                Building the web for Nigerian businesses — one site at a time.
+                Building digital solutions for businesses that mean business.
               </p>
               <p className="text-xs md:text-sm" style={{ color: 'rgba(245, 232, 216, 0.5)' }}>
                 Based in Nigeria 🇳🇬
