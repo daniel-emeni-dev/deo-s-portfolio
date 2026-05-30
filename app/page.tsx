@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { ArrowRight, Heart, MessageCircle, Globe, Rocket, Settings, Clock, Smartphone, Search, RefreshCw, Plus, Minus } from 'lucide-react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const scrollToSection = (id: string) => {
   const element = document.getElementById(id)
@@ -139,7 +140,11 @@ export default function Home() {
       `}</style>
 
       {/* Navigation */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur border-b border-border">
+      <header className="fixed top-0 left-0 right-0 z-50 border-b border-border" style={{
+        backgroundColor: 'rgba(28, 28, 28, 0.8)',
+        WebkitBackdropFilter: 'blur(8px)',
+        backdropFilter: 'blur(8px)'
+      }}>
         <nav className="max-w-5xl mx-auto px-6 md:px-12 py-6 flex items-center justify-between">
           <div className="text-2xl font-heading font-bold tracking-tight">
             <span className="text-primary">Dore</span><span style={{ color: '#F5E8D8' }}>Build</span>
@@ -212,7 +217,7 @@ export default function Home() {
           <ScrollReveal id="about-content">
             <h2 className="heading-accent text-4xl md:text-5xl font-heading font-black mb-12">The Person Behind the <span className="text-primary">Work</span></h2>
 
-            <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-start">
+            <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
               <div className="space-y-6">
                 <p className="text-lg md:text-xl leading-relaxed">
                   I&apos;m Daniel Emeni Ogheneruno. Self-taught, Nigeria-based, and genuinely obsessed with building things that work beautifully. Websites, web apps, landing pages, digital setups. If it lives on the internet and helps a business grow, I build it.
@@ -222,13 +227,19 @@ export default function Home() {
                 </p>
               </div>
 
-              {/* Profile Photo Placeholder */}
-              <div className="flex items-center justify-center">
-                <div className="rotating-border relative w-80 h-80 rounded-full border-2 border-dashed border-primary flex items-center justify-center bg-muted">
-                  <div className="text-center">
-                    <div className="font-heading font-bold text-primary text-2xl md:text-3xl">Daniel E.O</div>
-                    <p className="text-muted-foreground text-sm mt-2">Profile photo</p>
-                  </div>
+              {/* Profile Photo */}
+              <div className="flex items-center justify-center md:order-2">
+                <div className="rotating-border relative w-80 h-80 rounded-full flex items-center justify-center overflow-hidden border-2 border-dashed border-primary" style={{
+                  boxShadow: '0 8px 32px rgba(218, 165, 32, 0.15)'
+                }}>
+                  <Image
+                    src="/daniel-profile.jpg"
+                    alt="Daniel Emeni Ogheneruno — Founder of DoreBuild"
+                    fill
+                    className="rounded-full object-cover"
+                    style={{ objectPosition: 'center top' }}
+                    priority
+                  />
                 </div>
               </div>
             </div>
