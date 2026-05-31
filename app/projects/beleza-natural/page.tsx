@@ -142,11 +142,29 @@ export default function BelezaNaturalCase() {
         </div>
       </section>
 
+      {/* CTA Section */}
+      <section className="py-12 md:py-20 px-6 md:px-12 border-t border-border text-center">
+        <div className="max-w-5xl mx-auto">
+          <ScrollReveal id="cta">
+            <h2 className="heading-accent font-heading font-black text-3xl md:text-4xl mb-4">Ready to build?</h2>
+            <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto" style={{ color: 'rgba(245, 232, 216, 0.8)' }}>
+              Liked what you saw? Your business could be next. Let&apos;s build something worth showing off.
+            </p>
+            <Link
+              href="/"
+              className="inline-block px-6 py-4 sm:px-8 bg-primary text-primary-foreground font-bold rounded transition-all duration-300 hover:bg-secondary"
+            >
+              Back to Portfolio
+            </Link>
+          </ScrollReveal>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="border-t border-primary py-12 md:py-16 px-6 md:px-12 text-center mt-12">
         <div className="max-w-5xl mx-auto">
           <p className="text-muted-foreground text-sm md:text-base">
-            © 2026 DEO Websites — Built with intention.
+            © 2026 DoreBuild — Built with intention.
           </p>
         </div>
       </footer>

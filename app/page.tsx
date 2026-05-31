@@ -145,7 +145,7 @@ export default function Home() {
               I Build<br className="hidden sm:block" /> Websites <br className="hidden sm:block" /><span className="text-primary">That Work</span>.
             </h1>
             <p className="text-lg md:text-xl mb-12 max-w-2xl mx-auto leading-relaxed" style={{ color: 'rgba(245, 232, 216, 0.8)' }}>
-              Hi, I&apos;m Daniel — a Nigerian web developer helping small businesses look professional, get found online, and win more customers.
+              Hi, I&apos;m Daniel. A software developer who turns business ideas into digital experiences that actually work. No fluff, no overpriced agencies, just clean fast intentional builds that make your business look like it means business. 🛠️
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center stagger-children">
               <button
@@ -176,10 +176,10 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-start">
               <div className="space-y-6">
                 <p className="text-lg md:text-xl leading-relaxed">
-                  I&apos;m <strong>Daniel Emeni Ogheneruno</strong>, a self-taught web developer based in Nigeria. I build things that are visually sharp, responsive, and actually solve problems for real businesses.
+                  I&apos;m Daniel Emeni Ogheneruno. Self-taught, Nigeria-based, and genuinely obsessed with building things that work beautifully. Websites, web apps, landing pages, digital setups. If it lives on the internet and helps a business grow, I build it.
                 </p>
                 <p className="text-lg md:text-xl leading-relaxed">
-                  I got into this because I love it — and because I want to build an honest living from something meaningful. Every site I build carries that intention.
+                  I didn&apos;t get into this purely for the aesthetic. Okay maybe a little. But mostly because I love it and because I believe every business deserves a digital presence that reflects how serious they are. Big agency quality. Real person prices. That&apos;s the whole idea. 🤝
                 </p>
               </div>
 
@@ -292,7 +292,10 @@ export default function Home() {
       <section className="py-20 md:py-32 px-6 md:px-12" id="work">
         <div className="max-w-5xl mx-auto">
           <ScrollReveal id="work-content">
-            <h2 className="heading-accent text-4xl md:text-5xl font-heading font-black mb-16">What I&apos;ve <span className="text-primary">Built</span></h2>
+            <h2 className="heading-accent text-4xl md:text-5xl font-heading font-black mb-4">What I&apos;ve <span className="text-primary">Built</span></h2>
+            <p className="text-lg md:text-xl mb-16 max-w-3xl" style={{ color: 'rgba(245, 232, 216, 0.8)' }}>
+              Every project here started with a real conversation. Here&apos;s what happened next.
+            </p>
 
             <div className="grid gap-8 mb-12">
               {/* KJ Cakes Project */}
@@ -317,7 +320,7 @@ export default function Home() {
                   </div>
 
                   <p className="text-base md:text-lg leading-relaxed mb-8">
-                    A luxury cake business in Port Harcourt. Full brand website with gallery, services, and WhatsApp booking integration.
+                    A luxury cake business in Port Harcourt that deserved more than a WhatsApp status. We gave them a full brand website with a gallery, services, and a booking button that goes straight to WhatsApp. One tap from craving to conversation.
                   </p>
 
                   <div className="flex flex-wrap gap-2 mb-8">
@@ -354,7 +357,7 @@ export default function Home() {
                   </div>
 
                   <p className="text-base md:text-lg leading-relaxed mb-8">
-                    A futuristic hair and scalp care clinic concept. Full brand website featuring AI-powered scalp analysis, services showcase, and WhatsApp integration.
+                    What if a hair clinic felt like the future? This concept brand imagines exactly that. AI scalp analysis, premium services, and a digital experience that makes competitors look like they&apos;re still in 2015.
                   </p>
 
                   <div className="flex flex-wrap gap-2 mb-8">
@@ -374,7 +377,7 @@ export default function Home() {
               backgroundColor: '#252525',
               border: '2px dashed #DAA520'
             }}>
-              <p className="text-muted-foreground">More projects coming soon</p>
+              <p className="text-muted-foreground">More projects in progress. Good things take 7 days or less around here.</p>
             </div>
           </ScrollReveal>
         </div>
@@ -386,7 +389,7 @@ export default function Home() {
           <ScrollReveal id="services-content">
             <h2 className="heading-accent text-4xl md:text-5xl font-heading font-black mb-4">What I <span className="text-primary">Offer</span></h2>
             <p className="text-lg md:text-xl mb-16 max-w-3xl" style={{ color: 'rgba(245, 232, 216, 0.8)' }}>
-              Every project is built with care, clarity, and your business goals in mind.
+              Whether you need a full website, a focused landing page, or your entire digital presence sorted out, this is what&apos;s on the menu.
             </p>
 
             <div className="grid md:grid-cols-3 gap-8 mb-12">
@@ -407,7 +410,7 @@ export default function Home() {
               }}>
                 <Globe size={32} className="text-primary mb-4" />
                 <h3 className="text-xl md:text-2xl font-heading font-bold mb-3">Business Website</h3>
-                <p className="text-base leading-relaxed mb-6">A clean, fast, mobile-first website that represents your brand professionally and converts visitors into customers.</p>
+                <p className="text-base leading-relaxed mb-6">Clean, fast, and mobile first. The kind of website that makes people think you&apos;ve been in the game for years even if you just started. Built to look great, load fast, and turn visitors into customers.</p>
                 <p className="font-bold mb-4" style={{ color: '#DAA520' }}>Starting from ₦30,000</p>
                 <span className="inline-block px-3 py-1 text-xs font-medium rounded" style={{ backgroundColor: 'rgba(255, 111, 97, 0.12)', color: '#FF6F61', border: '1px solid rgba(255, 111, 97, 0.3)' }}>Most Popular</span>
               </div>
@@ -429,7 +432,7 @@ export default function Home() {
               }}>
                 <Rocket size={32} className="text-primary mb-4" />
                 <h3 className="text-xl md:text-2xl font-heading font-bold mb-3">Landing Page</h3>
-                <p className="text-base leading-relaxed mb-6">A single focused page built to promote one product, service, or event — designed to drive action.</p>
+                <p className="text-base leading-relaxed mb-6">One page. One goal. Maximum impact. Perfect for a product launch, a service promo, or anything that needs people to stop scrolling and actually do something.</p>
                 <p className="font-bold" style={{ color: '#DAA520' }}>Starting from ₦15,000</p>
               </div>
 
@@ -450,13 +453,13 @@ export default function Home() {
               }}>
                 <Settings size={32} className="text-primary mb-4" />
                 <h3 className="text-xl md:text-2xl font-heading font-bold mb-3">Website + SEO Setup</h3>
-                <p className="text-base leading-relaxed mb-6">Your website plus the basics that help you show up on Google — page titles, meta descriptions, speed optimisation, and Google indexing.</p>
+                <p className="text-base leading-relaxed mb-6">A website is great. A website people can actually find on Google is better. This package gives you both. Built right, optimised from day one, and ready to show up where it matters.</p>
                 <p className="font-bold" style={{ color: '#DAA520' }}>Starting from ₦45,000</p>
               </div>
             </div>
 
             <div className="text-center text-base">
-              <p>Prices are flexible depending on your needs and budget. <a href="https://wa.me/2349139690181" target="_blank" rel="noopener noreferrer" className="text-primary font-medium hover:text-secondary transition-colors">Let's talk</a> — no pressure.</p>
+              <p>Also handle WhatsApp Business setup and social media integration. Not sure what you need? <a href="https://wa.me/2349139690181" target="_blank" rel="noopener noreferrer" className="text-primary font-medium hover:text-secondary transition-colors">Message me</a> and we&apos;ll figure it out together. No awkward sales pitch, I promise.</p>
             </div>
           </ScrollReveal>
         </div>
@@ -468,7 +471,7 @@ export default function Home() {
           <ScrollReveal id="process-content">
             <h2 className="heading-accent text-4xl md:text-5xl font-heading font-black mb-4">How It <span className="text-primary">Works</span></h2>
             <p className="text-lg md:text-xl mb-16 max-w-3xl" style={{ color: 'rgba(245, 232, 216, 0.8)' }}>
-              Simple, transparent, and built around you.
+              No mystery, no endless back and forth. Just a clear process that gets you from idea to live in 7 days.
             </p>
 
             <div className="relative pl-12">
@@ -490,7 +493,7 @@ export default function Home() {
                     {/* Title */}
                     <h3 className="text-2xl md:text-3xl font-heading font-bold mb-3">Discovery</h3>
                     {/* Description */}
-                    <p className="text-base md:text-lg leading-relaxed">We have a quick conversation about your business, your goals, and what you need. No jargon, no pressure.</p>
+                    <p className="text-base md:text-lg leading-relaxed">We talk. You tell me about your business, your goals, and what you actually need. I listen, ask the right questions, and we figure out exactly what needs to be built. No jargon, just a real conversation.</p>
                   </div>
                 </div>
 
@@ -508,7 +511,7 @@ export default function Home() {
                     {/* Title */}
                     <h3 className="text-2xl md:text-3xl font-heading font-bold mb-3">Design & Build</h3>
                     {/* Description */}
-                    <p className="text-base md:text-lg leading-relaxed">I get to work building your site — clean, fast, and designed to represent your brand properly.</p>
+                    <p className="text-base md:text-lg leading-relaxed">This is where I disappear for a few days and come back with something that makes you go wait, that actually looks like me. Clean code, sharp visuals, built properly from the ground up.</p>
                   </div>
                 </div>
 
@@ -526,7 +529,7 @@ export default function Home() {
                     {/* Title */}
                     <h3 className="text-2xl md:text-3xl font-heading font-bold mb-3">Review & Refine</h3>
                     {/* Description */}
-                    <p className="text-base md:text-lg leading-relaxed">You see the first version and we adjust together until it feels exactly right.</p>
+                    <p className="text-base md:text-lg leading-relaxed">You see it. You react. We adjust. We repeat until every single detail feels exactly right. You are not just approving something, you are shaping it.</p>
                   </div>
                 </div>
 
@@ -544,7 +547,7 @@ export default function Home() {
                     {/* Title */}
                     <h3 className="text-2xl md:text-3xl font-heading font-bold mb-3">Launch</h3>
                     {/* Description */}
-                    <p className="text-base md:text-lg leading-relaxed">Your site goes live. I handle the deployment and make sure everything works perfectly.</p>
+                    <p className="text-base md:text-lg leading-relaxed">We go live. I handle everything including deployment, testing, and making sure nothing breaks at 2am. You just share the link and enjoy the reactions. 🚀</p>
                   </div>
                 </div>
               </div>
@@ -580,13 +583,13 @@ export default function Home() {
           <ScrollReveal id="contact-content">
             <h2 className="heading-accent text-4xl md:text-5xl font-heading font-black mb-6 text-center">Let&apos;s Build <span className="text-primary">Something</span></h2>
             <p className="text-lg md:text-xl text-center mb-16 max-w-2xl mx-auto" style={{ color: 'rgba(245, 232, 216, 0.8)' }}>
-              Have a project in mind? I&apos;d love to hear about it and explore how we can work together.
+              Got a business? Got an idea? Even just a vague feeling that your online presence could be better? That&apos;s enough. Let&apos;s talk.
             </p>
 
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               <div className="rounded-lg p-8 md:p-10" style={{ borderColor: 'rgba(218, 165, 32, 0.2)', borderWidth: '1px' }}>
                 <h3 className="text-xl md:text-2xl font-heading font-bold mb-3">WhatsApp</h3>
-                <p className="text-muted-foreground mb-6">Quick response, direct communication. Let&apos;s chat there.</p>
+                <p className="text-muted-foreground mb-6">Fastest way to reach me. I read every message usually within the hour. Let&apos;s figure out what we&apos;re building.</p>
                 <a
                   href="https://wa.me/2349139690181"
                   target="_blank"
@@ -599,7 +602,7 @@ export default function Home() {
 
               <div className="rounded-lg p-8 md:p-10" style={{ borderColor: 'rgba(218, 165, 32, 0.2)', borderWidth: '1px' }}>
                 <h3 className="text-xl md:text-2xl font-heading font-bold mb-3">Email</h3>
-                <p className="text-muted-foreground mb-6">Send me a detailed message with your project details.</p>
+                <p className="text-muted-foreground mb-6">More of an email person? Respect. Send me your details and I&apos;ll get back to you within 24 hours with a clear plan.</p>
                 <a
                   href="mailto:danielemeni07@gmail.com"
                   className="text-primary font-medium inline-flex items-center gap-2 hover:text-secondary transition-colors"
@@ -621,7 +624,7 @@ export default function Home() {
                 </a>
               </div>
               <p className="text-sm md:text-base text-muted-foreground">
-                <strong className="text-foreground">Response time:</strong> I typically reply within 24 hours. Let&apos;s make something great together.
+                Fair warning. I reply fast. You might actually get a response before you&apos;ve put your phone down. 😏
               </p>
             </div>
           </ScrollReveal>
@@ -639,7 +642,7 @@ export default function Home() {
                 <span className="text-primary">DEO</span> Websites
               </h3>
               <p className="text-sm md:text-base mb-4" style={{ color: 'rgba(245, 232, 216, 0.8)' }}>
-                Building the web for Nigerian businesses — one site at a time.
+                Building digital solutions for businesses that mean business.
               </p>
               <p className="text-xs md:text-sm text-muted-foreground">
                 Based in Nigeria 🇳🇬
@@ -793,7 +796,7 @@ export default function Home() {
           {/* Bottom Section */}
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 text-xs md:text-sm text-muted-foreground">
             <p className="flex items-center justify-center md:justify-start gap-1">
-              © 2026 DEO Websites — Built with <span className="heartbeat inline-block mx-1"><Heart size={14} className="text-secondary" /></span> intention.
+              © 2026 DoreBuild — Built with <span className="heartbeat inline-block mx-1"><Heart size={14} className="text-secondary" /></span> intention.
             </p>
           </div>
         </div>
