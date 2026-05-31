@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { ArrowRight, Heart, MessageCircle, Globe, Rocket, Settings } from 'lucide-react'
+import { ArrowRight, Heart, MessageCircle, Globe, Rocket, Settings, Github, Linkedin, Twitter } from 'lucide-react'
 import Link from 'next/link'
 
 const scrollToSection = (id: string) => {
@@ -184,12 +184,103 @@ export default function Home() {
               </div>
 
               {/* Profile Photo Placeholder */}
-              <div className="flex items-center justify-center">
-                <div className="rotating-border relative w-80 h-80 rounded-full border-2 border-dashed border-primary flex items-center justify-center bg-muted">
+              <div className="flex flex-col items-center justify-center">
+                <div className="rotating-border relative w-80 h-80 rounded-full border-2 border-dashed border-primary flex items-center justify-center bg-muted mb-8">
                   <div className="text-center">
                     <div className="font-heading font-bold text-primary text-2xl md:text-3xl">Daniel E.O</div>
                     <p className="text-muted-foreground text-sm mt-2">Profile photo</p>
                   </div>
+                </div>
+
+                {/* Social Media Icons */}
+                <div className="flex gap-4">
+                  <a
+                    href="https://github.com/daniel-emeni-dev"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="transition-all duration-200"
+                    style={{
+                      width: '40px',
+                      height: '40px',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      borderRadius: '50%',
+                      backgroundColor: '#252525',
+                      border: '1px solid rgba(218, 165, 32, 0.3)',
+                      color: 'rgba(245, 232, 216, 0.7)'
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.borderColor = '#DAA520';
+                      e.currentTarget.style.color = '#DAA520';
+                      e.currentTarget.style.transform = 'translateY(-2px)';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.borderColor = 'rgba(218, 165, 32, 0.3)';
+                      e.currentTarget.style.color = 'rgba(245, 232, 216, 0.7)';
+                      e.currentTarget.style.transform = 'translateY(0)';
+                    }}
+                  >
+                    <Github size={20} />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/daniel-emeni"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="transition-all duration-200"
+                    style={{
+                      width: '40px',
+                      height: '40px',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      borderRadius: '50%',
+                      backgroundColor: '#252525',
+                      border: '1px solid rgba(218, 165, 32, 0.3)',
+                      color: 'rgba(245, 232, 216, 0.7)'
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.borderColor = '#DAA520';
+                      e.currentTarget.style.color = '#DAA520';
+                      e.currentTarget.style.transform = 'translateY(-2px)';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.borderColor = 'rgba(218, 165, 32, 0.3)';
+                      e.currentTarget.style.color = 'rgba(245, 232, 216, 0.7)';
+                      e.currentTarget.style.transform = 'translateY(0)';
+                    }}
+                  >
+                    <Linkedin size={20} />
+                  </a>
+                  <a
+                    href="https://x.com/DoreBuild"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="transition-all duration-200"
+                    style={{
+                      width: '40px',
+                      height: '40px',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      borderRadius: '50%',
+                      backgroundColor: '#252525',
+                      border: '1px solid rgba(218, 165, 32, 0.3)',
+                      color: 'rgba(245, 232, 216, 0.7)'
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.borderColor = '#DAA520';
+                      e.currentTarget.style.color = '#DAA520';
+                      e.currentTarget.style.transform = 'translateY(-2px)';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.borderColor = 'rgba(218, 165, 32, 0.3)';
+                      e.currentTarget.style.color = 'rgba(245, 232, 216, 0.7)';
+                      e.currentTarget.style.transform = 'translateY(0)';
+                    }}
+                  >
+                    <Twitter size={20} />
+                  </a>
                 </div>
               </div>
             </div>
@@ -538,11 +629,173 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-primary py-12 md:py-16 px-6 md:px-12 text-center">
-        <div className="max-w-5xl mx-auto">
-          <p className="text-muted-foreground text-sm md:text-base flex items-center justify-center gap-1 whitespace-nowrap">
-            © 2026 DEO Websites — Built with <span className="heartbeat inline-block mx-1"><Heart size={16} className="text-secondary" /></span> intention.
-          </p>
+      <footer className="px-6 md:px-12 py-12 md:py-16 md:py-20" style={{ backgroundColor: '#161616' }}>
+        <div className="max-w-6xl mx-auto">
+          {/* Top Section - Three Columns */}
+          <div className="grid md:grid-cols-3 gap-12 mb-12 pb-12" style={{ borderBottomColor: 'rgba(218, 165, 32, 0.2)', borderBottomWidth: '1px' }}>
+            {/* Column 1 - Brand */}
+            <div>
+              <h3 className="text-xl md:text-2xl font-heading font-bold mb-3">
+                <span className="text-primary">DEO</span> Websites
+              </h3>
+              <p className="text-sm md:text-base mb-4" style={{ color: 'rgba(245, 232, 216, 0.8)' }}>
+                Building the web for Nigerian businesses — one site at a time.
+              </p>
+              <p className="text-xs md:text-sm text-muted-foreground">
+                Based in Nigeria 🇳🇬
+              </p>
+            </div>
+
+            {/* Column 2 - Quick Links */}
+            <div>
+              <h4 className="text-xs font-bold mb-6 uppercase tracking-widest" style={{ color: '#DAA520' }}>
+                Quick Links
+              </h4>
+              <nav className="flex flex-col gap-3">
+                <button onClick={() => scrollToSection('work')} className="text-sm text-left transition-colors duration-200" style={{ color: 'rgba(245, 232, 216, 0.7)' }} onMouseEnter={(e) => e.currentTarget.style.color = '#DAA520'} onMouseLeave={(e) => e.currentTarget.style.color = 'rgba(245, 232, 216, 0.7)'}>
+                  Work
+                </button>
+                <button onClick={() => scrollToSection('about')} className="text-sm text-left transition-colors duration-200" style={{ color: 'rgba(245, 232, 216, 0.7)' }} onMouseEnter={(e) => e.currentTarget.style.color = '#DAA520'} onMouseLeave={(e) => e.currentTarget.style.color = 'rgba(245, 232, 216, 0.7)'}>
+                  About
+                </button>
+                <button onClick={() => scrollToSection('contact')} className="text-sm text-left transition-colors duration-200" style={{ color: 'rgba(245, 232, 216, 0.7)' }} onMouseEnter={(e) => e.currentTarget.style.color = '#DAA520'} onMouseLeave={(e) => e.currentTarget.style.color = 'rgba(245, 232, 216, 0.7)'}>
+                  Contact
+                </button>
+              </nav>
+            </div>
+
+            {/* Column 3 - Get In Touch */}
+            <div>
+              <h4 className="text-xs font-bold mb-6 uppercase tracking-widest" style={{ color: '#DAA520' }}>
+                Get In Touch
+              </h4>
+              <div className="space-y-3 mb-6">
+                <a
+                  href="https://wa.me/2349139690181"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-sm transition-colors duration-200"
+                  style={{ color: '#F5E8D8' }}
+                  onMouseEnter={(e) => e.currentTarget.style.color = '#DAA520'}
+                  onMouseLeave={(e) => e.currentTarget.style.color = '#F5E8D8'}
+                >
+                  +234 913 969 0181
+                </a>
+                <a
+                  href="mailto:danielemeni07@gmail.com"
+                  className="block text-sm transition-colors duration-200"
+                  style={{ color: '#F5E8D8' }}
+                  onMouseEnter={(e) => e.currentTarget.style.color = '#DAA520'}
+                  onMouseLeave={(e) => e.currentTarget.style.color = '#F5E8D8'}
+                >
+                  danielemeni07@gmail.com
+                </a>
+              </div>
+
+              {/* Social Media Icons */}
+              <div className="mb-6">
+                <p className="text-xs font-bold mb-3 uppercase tracking-widest" style={{ color: '#DAA520' }}>
+                  Find me online
+                </p>
+                <div className="flex gap-3">
+                  <a
+                    href="https://github.com/daniel-emeni-dev"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="transition-all duration-200"
+                    style={{
+                      width: '36px',
+                      height: '36px',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      borderRadius: '50%',
+                      backgroundColor: '#252525',
+                      border: '1px solid rgba(218, 165, 32, 0.3)',
+                      color: 'rgba(245, 232, 216, 0.7)'
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.borderColor = '#DAA520';
+                      e.currentTarget.style.color = '#DAA520';
+                      e.currentTarget.style.transform = 'translateY(-2px)';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.borderColor = 'rgba(218, 165, 32, 0.3)';
+                      e.currentTarget.style.color = 'rgba(245, 232, 216, 0.7)';
+                      e.currentTarget.style.transform = 'translateY(0)';
+                    }}
+                  >
+                    <Github size={18} />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/daniel-emeni"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="transition-all duration-200"
+                    style={{
+                      width: '36px',
+                      height: '36px',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      borderRadius: '50%',
+                      backgroundColor: '#252525',
+                      border: '1px solid rgba(218, 165, 32, 0.3)',
+                      color: 'rgba(245, 232, 216, 0.7)'
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.borderColor = '#DAA520';
+                      e.currentTarget.style.color = '#DAA520';
+                      e.currentTarget.style.transform = 'translateY(-2px)';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.borderColor = 'rgba(218, 165, 32, 0.3)';
+                      e.currentTarget.style.color = 'rgba(245, 232, 216, 0.7)';
+                      e.currentTarget.style.transform = 'translateY(0)';
+                    }}
+                  >
+                    <Linkedin size={18} />
+                  </a>
+                  <a
+                    href="https://x.com/DoreBuild"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="transition-all duration-200"
+                    style={{
+                      width: '36px',
+                      height: '36px',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      borderRadius: '50%',
+                      backgroundColor: '#252525',
+                      border: '1px solid rgba(218, 165, 32, 0.3)',
+                      color: 'rgba(245, 232, 216, 0.7)'
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.borderColor = '#DAA520';
+                      e.currentTarget.style.color = '#DAA520';
+                      e.currentTarget.style.transform = 'translateY(-2px)';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.borderColor = 'rgba(218, 165, 32, 0.3)';
+                      e.currentTarget.style.color = 'rgba(245, 232, 216, 0.7)';
+                      e.currentTarget.style.transform = 'translateY(0)';
+                    }}
+                  >
+                    <Twitter size={18} />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Bottom Section */}
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 text-xs md:text-sm text-muted-foreground">
+            <p className="flex items-center justify-center md:justify-start gap-1">
+              © 2026 DEO Websites — Built with <span className="heartbeat inline-block mx-1"><Heart size={14} className="text-secondary" /></span> intention.
+            </p>
+          </div>
         </div>
       </footer>
     </main>
