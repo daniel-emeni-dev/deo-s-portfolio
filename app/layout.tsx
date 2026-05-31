@@ -7,7 +7,7 @@ const syne = Syne({ subsets: ['latin'], variable: '--font-syne' })
 const dmSans = DM_Sans({ subsets: ['latin'], variable: '--font-dm-sans' })
 
 export const metadata: Metadata = {
-  title: 'DoreBuild | Nigerian Web Developer',
+  title: 'DEO Websites | Nigerian Web Developer',
   description: 'Daniel Emeni Ogheneruno — Building professional websites that help small businesses get found online and win more customers.',
   generator: 'v0.app',
   icons: {

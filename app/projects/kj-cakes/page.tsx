@@ -56,14 +56,14 @@ export default function KJCakesCase() {
       <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur border-b border-border">
         <nav className="max-w-5xl mx-auto px-6 md:px-12 py-6 flex items-center justify-between">
           <Link href="/" className="text-2xl font-heading font-bold tracking-tight">
-            <span className="text-primary">Dore</span><span style={{ color: '#F5E8D8' }}>Build</span>
+            <span className="text-primary">DEO</span> Websites
           </Link>
           <Link
             href="/"
-            className="flex items-center gap-1 text-sm font-dm-sans transition-colors duration-200 hover:opacity-80"
-            style={{ color: '#DAA520' }}
+            className="btn-secondary flex items-center gap-2 text-sm"
           >
-            ← Back to Portfolio
+            <ArrowLeft size={18} />
+            Back to Portfolio
           </Link>
         </nav>
       </header>
