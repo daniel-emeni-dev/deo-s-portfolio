@@ -1,88 +1,77 @@
 # DoreBuild — Personal Portfolio
 
-The official portfolio of Daniel Emeni Ogheneruno. Software engineer,
-DoreBuild founder, and firm believer that good code and good design
-are not mutually exclusive.
+The portfolio of Daniel Emeni Ogheneruno, showcasing software projects and digital experiences for businesses.
 
-This is where I put the work. Judge away.
+**Live site:** [v0-portfolio-website-beryl-rho.vercel.app](https://v0-portfolio-website-beryl-rho.vercel.app)
 
-**Live Site:** https://v0-portfolio-website-beryl-rho.vercel.app
+## Purpose
 
----
+DoreBuild is a place to present practical web projects, explain the thinking behind them, and help potential clients understand the services and process. The goal is to pair thoughtful visual design with useful, maintainable software.
 
-## What This Is
+## Built with
 
-A full personal portfolio built to show two things — that I can build
-real products, and that I take the craft seriously. No lorem ipsum.
-No fake testimonials. Just actual work with actual case studies.
+- **Next.js** — application framework
+- **React** — UI components
+- **TypeScript** — typed application code
+- **Tailwind CSS** — styling system
+- **Framer Motion** — interface animation
+- **shadcn/ui** — reusable UI components
+- **Vercel** — deployment
 
----
+## What's included
 
-## Tech Stack
+- Responsive, mobile-first layout.
+- Project and case-study sections.
+- Services and project-process information.
+- FAQ content for prospective clients.
+- WhatsApp contact entry point.
+- Motion effects intended to support, rather than distract from, navigation.
 
-- **Next.js** — because Vercel and Next.js were made for each other
-- **React** — the engine under everything
-- **TypeScript** — because catching errors at compile time beats
-  catching them in production
-- **Tailwind CSS** — utility-first and proud of it
-- **Framer Motion** — for animations that feel intentional, not decorative
-- **shadcn/ui** — accessible components that don't look like every
-  other component library
-- **Deployed on Vercel** — obviously
+## Selected projects
 
----
+### ScholarScan
+An AI-assisted engineering study tool designed to analyze circuit diagrams and provide structured technical explanations.
 
-## Projects Featured
+[Source code](https://github.com/daniel-emeni-dev/scholar-scan)
 
-### Client & Spec Work
-**KJ Cakes PH** — A luxury cake business in Port Harcourt that deserved
-more than a WhatsApp status. Full brand website with gallery, services,
-and direct WhatsApp booking integration.
-→ https://v0-kj-cakes-ph-website.vercel.app
+### Sephil Home & Business
+A retail storefront prototype exploring product discovery, cart behavior, checkout, and WhatsApp-based order confirmation.
 
-**Beleza Natural Hair Clinic** — A concept brand exploring what a modern
-Nigerian hair clinic looks like when it leans fully into technology and
-premium wellness. AI scalp analysis, futuristic design, Friday clinic
-bookings. What 2030 looks like for Nigerian healthcare branding.
-→ https://v0-beleza-natural-website.vercel.app
+[Source code](https://github.com/daniel-emeni-dev/sephil-home-and-clothing-mvp-)
 
-### Engineering Projects
-**ScholarScan** — An AI-native utility that scans mathematical formulas,
-circuit diagrams, and technical problems and returns structured,
-digestible breakdowns. Built for engineering students who need a
-smarter study tool. Stack: Next.js 16, Supabase SSR Auth, PostgreSQL
-with Row Level Security, JWT verification. Engineered entirely on
-Android via GitHub Codespaces, which either makes me resourceful
-or slightly unhinged. Possibly both.
+### KJ Cakes PH
+A cake business website with a product gallery, service information, and WhatsApp booking entry point.
 
----
+[Live site](https://v0-kj-cakes-ph-website.vercel.app) · [Source code](https://github.com/daniel-emeni-dev/kj-cakes-ph-website-)
 
-## Portfolio Features
+### Beleza Natural
+A concept for a modern hair and scalp clinic experience, exploring responsive design and a technology-assisted customer journey.
 
-- Mobile-first responsive design — because most visitors are on
-  their phones
-- Individual case study pages — Brief, Approach, Result for each project
-- Services section with transparent introductory pricing
-- Process section — exactly how a project goes from idea to live
-- Guarantee section — seven day delivery, mobile-first, SEO-ready,
-  unlimited revisions during build
-- FAQ section — every question a client has before they ask it
-- Floating WhatsApp button — because friction kills conversions
-- Framer Motion scroll animations — subtle, not distracting
-- Deep Earth color palette — warm, distinctive, nothing like the
-  default blue-purple gradient everyone else is using
+[Live site](https://v0-beleza-natural-website.vercel.app) · [Source code](https://github.com/daniel-emeni-dev/beleza-natural-website)
 
----
+## Run locally
+
+You'll need Node.js and npm.
+
+```bash
+git clone https://github.com/daniel-emeni-dev/deo-s-portfolio.git
+cd deo-s-portfolio
+npm install
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000).
+
+Check the repository's environment example and source code for any project-specific configuration needed in your environment.
 
 ## Contact
 
-- 🌐 Portfolio: v0-portfolio-website-beryl-rho.vercel.app
-- 📧 danielemeni07@gmail.com
-- 📱 +234 913 969 0181
-- 💼 linkedin.com/in/daniel-emeni
-- 🐦 @DoreBuild on X
-- 💻 github.com/daniel-emeni-dev
+- **Portfolio:** [DoreBuild](https://v0-portfolio-website-beryl-rho.vercel.app)
+- **GitHub:** [daniel-emeni-dev](https://github.com/daniel-emeni-dev)
+- **LinkedIn:** [daniel-emeni](https://www.linkedin.com/in/daniel-emeni)
+- **X:** [@DoreBuild](https://x.com/DoreBuild)
+- **Substack:** [@dorebuild](https://substack.com/@dorebuild)
 
 ---
 
-*© 2026 DoreBuild — Built with intention.*
+*Building useful digital experiences, one thoughtful iteration at a time.*
